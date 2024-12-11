@@ -53,9 +53,7 @@
             background-color: #ffd700;
             color: #4b0082;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
         }
         .language-switcher {
             margin: 10px 0;
@@ -74,6 +72,31 @@
             background-color: #ffd700;
             color: #4b0082;
         }
+        .teacher-section, .blog-section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+        .teacher-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .blog-section article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .license {
+            font-size: 12px;
+            margin-top: 20px;
+            color: #4b0082;
+        }
     </style>
     <script>
         const translations = {
@@ -86,7 +109,11 @@
                 packsTitle: "Special Packs",
                 pack1: "12 Lessons (90 minutes each): €150/month",
                 pack2: "Pronunciation Pack (3 times/week): €200/month",
-                footer: "Contact me to start your French journey online today!"
+                footer: "Contact me to start your French journey online today!",
+                teacher: "Your Teacher",
+                teacherDescription: "Hi! I'm Meriem, a passionate French teacher with over a decade of experience. I've worked with learners from all backgrounds, helping them excel in their language goals. Let's make learning French a fun and rewarding experience!",
+                blogTitle: "Blog",
+                license: "© 2024 Meriem Bensaid. All rights reserved. This website cannot be modified or reproduced without permission."
             },
             ar: {
                 title: "دروس اللغة الفرنسية مع مريم",
@@ -97,7 +124,11 @@
                 packsTitle: "الباقات الخاصة",
                 pack1: "12 درسًا (كل درس 90 دقيقة): 150 يورو/الشهر",
                 pack2: "باقة النطق (3 مرات في الأسبوع): 200 يورو/الشهر",
-                footer: "اتصل بي لبدء رحلتك في تعلم اللغة الفرنسية عبر الإنترنت اليوم!"
+                footer: "اتصل بي لبدء رحلتك في تعلم اللغة الفرنسية عبر الإنترنت اليوم!",
+                teacher: "معلمتك",
+                teacherDescription: "مرحبًا! أنا مريم، مدرسة لغة فرنسية شغوفة بخبرة تزيد عن عقد. عملت مع متعلمين من جميع الخلفيات، وساعدتهم على التفوق في أهدافهم اللغوية. دعنا نجعل تعلم الفرنسية تجربة ممتعة ومجزية!",
+                blogTitle: "مدونة",
+                license: "© 2024 مريم بن سعيد. جميع الحقوق محفوظة. لا يجوز تعديل أو إعادة إنتاج هذا الموقع دون إذن."
             },
             de: {
                 title: "Französischunterricht mit Meriem",
@@ -108,7 +139,11 @@
                 packsTitle: "Spezialpakete",
                 pack1: "12 Lektionen (jeweils 90 Minuten): 150 €/Monat",
                 pack2: "Aussprachepaket (3 Mal pro Woche): 200 €/Monat",
-                footer: "Kontaktieren Sie mich, um Ihre Französischreise online noch heute zu beginnen!"
+                footer: "Kontaktieren Sie mich, um Ihre Französischreise online noch heute zu beginnen!",
+                teacher: "Ihre Lehrerin",
+                teacherDescription: "Hallo! Ich bin Meriem, eine leidenschaftliche Französischlehrerin mit über einem Jahrzehnt Erfahrung. Ich habe mit Lernenden aus allen Bereichen gearbeitet und ihnen geholfen, ihre Sprachziele zu erreichen. Lassen Sie uns das Französischlernen zu einer unterhaltsamen und lohnenden Erfahrung machen!",
+                blogTitle: "Blog",
+                license: "© 2024 Meriem Bensaid. Alle Rechte vorbehalten. Diese Website darf nicht ohne Genehmigung geändert oder reproduziert werden."
             }
         };
 
@@ -122,6 +157,10 @@
             document.querySelector(".pack1").textContent = translations[lang].pack1;
             document.querySelector(".pack2").textContent = translations[lang].pack2;
             document.querySelector("footer p").textContent = translations[lang].footer;
+            document.querySelector(".teacher-section h2").textContent = translations[lang].teacher;
+            document.querySelector(".teacher-section p").textContent = translations[lang].teacherDescription;
+            document.querySelector(".blog-section h2").textContent = translations[lang].blogTitle;
+            document.querySelector(".license").textContent = translations[lang].license;
         }
     </script>
 </head>
@@ -147,8 +186,21 @@
             </ul>
         </div>
     </section>
+
+    <section class="teacher-section">
+        <h2>Your Teacher</h2>
+        <img src="teacher.jpg" alt="Your Teacher">
+        <p>Hi! I'm Meriem, a passionate French teacher with over a decade of experience. I've worked with learners from all backgrounds, helping them excel in their language goals. Let's make learning French a fun and rewarding experience!</p>
+    </section>
+
+    <section class="blog-section">
+        <h2>Blog</h2>
+        <!-- Blog content goes here -->
+    </section>
+
     <footer>
         <p>Contact me to start your French journey online today!</p>
+        <p class="license">© 2024 Meriem Bensaid. All rights reserved. This website cannot be modified or reproduced without permission.</p>
     </footer>
 </body>
 </html>
