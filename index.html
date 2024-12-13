@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>French Lessons with Meriem</title>
     <style>
-        /* Basic styling to make the navigation visible */
+        /* Basic styling for navigation */
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -39,8 +39,6 @@
         }
 
         header {
-            background-color: #ffd700; /* Golden yellow */
-            color: #4b0082;
             text-align: center;
             padding: 20px;
         }
@@ -50,63 +48,12 @@
             text-align: center;
         }
 
-        h1 {
-            margin: 10px 0;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        /* Dark Purple Bar Section */
-        #intro {
-            background-color: #5A1A8A; /* Dark Purple */
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-
-        #intro h2 {
-            font-size: 2.5em;
-        }
-
-        #intro p {
-            font-size: 1.2em;
-        }
-
-        /* Tariff Section */
-        #tariffs {
-            text-align: center;
-            margin: 20px;
-        }
-
-        #tariffs .price-caption {
-            background-color: #4b0082; /* Purple */
-            color: #fff;
-            padding: 10px;
-            margin: 20px 0;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-
-        #tariffs .packs {
-            background-color: #fff8dc; /* Light cream yellow */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
-            width: 80%;
-            max-width: 600px;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #ffd700; /* Golden yellow */
-            color: #4b0082;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 80%; /* Make the image responsive and not very big */
+            height: auto;
+            margin-bottom: 20px;
         }
 
         .language-switcher {
@@ -128,11 +75,34 @@
             background-color: #ffd700; /* Gold */
             color: #4b0082;
         }
-
     </style>
+    <script>
+        function changeLanguage(language) {
+            const content = {
+                en: {
+                    title: "French Lessons with Meriem",
+                    intro: "Learn French with a Skilled Teacher",
+                    description: "With over 10 years of experience, I specialize in teaching professionals, kids, families, and diplomats. Whether you're starting from scratch, need to improve your pronunciation, grammar, or prepare for exams, I can guide you through the learning process. I also help you learn to write official documents with confidence."
+                },
+                fr: {
+                    title: "Cours de français avec Meriem",
+                    intro: "Apprenez le français avec une enseignante expérimentée",
+                    description: "Avec plus de 10 ans d'expérience, je me spécialise dans l'enseignement aux professionnels, enfants, familles et diplomates. Que vous soyez débutant, que vous ayez besoin d'améliorer votre prononciation, votre grammaire ou de vous préparer aux examens, je peux vous guider tout au long du processus d'apprentissage. Je vous aide également à rédiger des documents officiels avec confiance."
+                },
+                ar: {
+                    title: "دروس اللغة الفرنسية مع مريم",
+                    intro: "تعلم الفرنسية مع معلمة ماهرة",
+                    description: "مع أكثر من 10 سنوات من الخبرة، أختص في تعليم المهنيين والأطفال والعائلات والدبلوماسيين. سواء كنت مبتدئًا أو تحتاج إلى تحسين النطق أو القواعد أو التحضير للامتحانات، يمكنني إرشادك خلال عملية التعلم. كما أساعدك على كتابة المستندات الرسمية بثقة."
+                }
+            };
+
+            document.querySelector("h1").textContent = content[language].title;
+            document.querySelector("#intro h2").textContent = content[language].intro;
+            document.querySelector("#intro p").textContent = content[language].description;
+        }
+    </script>
 </head>
 <body>
-
     <!-- Navigation Menu -->
     <nav>
         <ul>
@@ -142,98 +112,26 @@
         </ul>
     </nav>
 
+    <!-- Top Image -->
+    <img src="https://raw.githubusercontent.com/meriem-beep/French-lessons-/main/IMG_2556.jpeg" alt="French Teacher Home Page Banner">
+
     <!-- Main Header -->
     <header>
-        <h1 id="header-title">Welcome to French Lessons with Meriem!</h1>
-        <p id="header-desc">Experienced French teacher with 10 years of expertise.</p>
+        <h1>French Lessons with Meriem</h1>
+        <p>Experienced French teacher with 10 years of expertise.</p>
     </header>
 
-    <!-- Banner Image -->
-    <img src="https://raw.githubusercontent.com/meriem-beep/French-lessons-/main/IMG_2556.jpeg" alt="French Teacher Home Page Banner" style="width: 80%; display: block; margin: 0 auto; border-radius: 10px;" />
-
-    <!-- Dark Purple Bar with Introduction -->
-    <section id="intro">
-        <h2 id="intro-title">Learn French with a Skilled Teacher</h2>
-        <p id="intro-text">With over 10 years of experience, I specialize in teaching professionals, kids, families, and diplomats. Whether you're starting from scratch, need to improve your pronunciation, grammar, or prepare for exams, I can guide you through the learning process. I also help you learn to write official documents with confidence.</p>
-    </section>
-
-    <!-- Tariff Section -->
-    <section id="tariffs">
-        <div class="price-caption">
-            <h3 id="tariffs-title">My Tariffs</h3>
-            <p id="tariffs-price">€15 for 90 minutes</p>
-        </div>
-
-        <div class="packs">
-            <h2 id="packs-title">Special Packs</h2>
-            <ul>
-                <li id="packs-item-1">€150 for 12 lessons (standard pack)</li>
-                <li id="packs-item-2">€200 for 15 pronunciation lessons (pronunciation pack)</li>
-            </ul>
-        </div>
-    </section>
-
     <!-- Language Switcher -->
-    <section class="language-switcher">
+    <div class="language-switcher">
         <button onclick="changeLanguage('en')">English</button>
         <button onclick="changeLanguage('fr')">Français</button>
         <button onclick="changeLanguage('ar')">العربية</button>
+    </div>
+
+    <!-- Dark Purple Bar with Introduction -->
+    <section id="intro">
+        <h2>Learn French with a Skilled Teacher</h2>
+        <p>With over 10 years of experience, I specialize in teaching professionals, kids, families, and diplomats. Whether you're starting from scratch, need to improve your pronunciation, grammar, or prepare for exams, I can guide you through the learning process. I also help you learn to write official documents with confidence.</p>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>Contact me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    </footer>
-
-    <!-- Language Switch Script -->
-    <script>
-        const translations = {
-            en: {
-                headerTitle: "Welcome to French Lessons with Meriem!",
-                headerDesc: "Experienced French teacher with 10 years of expertise.",
-                introTitle: "Learn French with a Skilled Teacher",
-                introText: "With over 10 years of experience, I specialize in teaching professionals, kids, families, and diplomats. Whether you're starting from scratch, need to improve your pronunciation, grammar, or prepare for exams, I can guide you through the learning process. I also help you learn to write official documents with confidence.",
-                tariffsTitle: "My Tariffs",
-                tariffsPrice: "€15 for 90 minutes",
-                packsTitle: "Special Packs",
-                packsItem1: "€150 for 12 lessons (standard pack)",
-                packsItem2: "€200 for 15 pronunciation lessons (pronunciation pack)"
-            },
-            fr: {
-                headerTitle: "Bienvenue aux cours de français avec Meriem!",
-                headerDesc: "Professeure de français expérimentée avec 10 ans d'expérience.",
-                introTitle: "Apprenez le français avec une enseignante qualifiée",
-                introText: "Avec plus de 10 ans d'expérience, je me spécialise dans l'enseignement aux professionnels, enfants, familles et diplomates. Que vous débutiez de zéro, ayez besoin d'améliorer votre prononciation, grammaire, ou de vous préparer pour des examens, je peux vous guider tout au long du processus d'apprentissage. Je vous aide également à apprendre à rédiger des documents officiels en toute confiance.",
-                tariffsTitle: "Mes Tarifs",
-                tariffsPrice: "15 € pour 90 minutes",
-                packsTitle: "Packs Spéciaux",
-                packsItem1: "150 € pour 12 cours (pack standard)",
-                packsItem2: "200 € pour 15 cours de prononciation (pack prononciation)"
-            },
-            ar: {
-                headerTitle: "مرحبًا بكم في دروس اللغة الفرنسية مع مريم!",
-                headerDesc: "مدرسة لغة فرنسية ذات خبرة لأكثر من 10 سنوات.",
-                introTitle: "تعلم الفرنسية مع معلمة محترفة",
-                introText: "مع أكثر من 10 سنوات من الخبرة، أتخصص في تعليم المهنيين، الأطفال، العائلات والدبلوماسيين. سواء كنت مبتدئًا، تحتاج إلى تحسين النطق، القواعد أو التحضير للامتحانات، يمكنني إرشادك خلال عملية التعلم. كما أساعدك على تعلم كتابة المستندات الرسمية بثقة.",
-                tariffsTitle: "أسعاري",
-                tariffsPrice: "15 يورو لمدة 90 دقيقة",
-                packsTitle: "باقات خاصة",
-                packsItem1: "150 يورو لـ 12 درسًا (الباقة العادية)",
-                packsItem2: "200 يورو لـ 15 درس نطق (باقة النطق)"
-            }
-        };
-
-        function changeLanguage(lang) {
-            document.getElementById('header-title').textContent = translations[lang].headerTitle;
-            document.getElementById('header-desc').textContent = translations[lang].headerDesc;
-            document.getElementById('intro-title').textContent = translations[lang].introTitle;
-            document.getElementById('intro-text').textContent = translations[lang].introText;
-            document.getElementById('tariffs-title').textContent = translations[lang].tariffsTitle;
-            document.getElementById('tariffs-price').textContent = translations[lang].tariffsPrice;
-            document.getElementById('packs-title').textContent = translations[lang].packsTitle;
-            document.getElementById('packs-item-1').textContent = translations[lang].packsItem1;
-            document.getElementById('packs-item-2').textContent = translations[lang].packsItem2;
-        }
-    </script>
 </body>
 </html>
