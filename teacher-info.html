@@ -1,26 +1,189 @@
-<section class="description">
-    #teacher-description p {
-    font-weight: bold;
-    color: red; /* This makes the question text red */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5ff; /* Light yellow */
+            color: #4b0082; /* Purple */
+        }
 
-    <p><strong>A description is just makeup. Let's meet so you can make your own description of me.</strong></p>
-    <p><strong>Oh, wait, apparently I need to write something 🙄</strong></p>
-    <p><strong>Ok, so I'm 32 years old, I speak French, Arabic, English, German, and a little Spanish.</strong></p>
-    <p><strong>I hold a degree in English literature and Anglo-Saxon studies.</strong></p>
-    <ul>
-        <li><strong>Passionate about writing, especially fiction.</strong></li>
-        <li><strong>I love playing basketball and traveling.</strong></li>
-    </ul>
-    <p><strong>I don't know what made you choose French (you absolutely must tell me), but as Duffy said in her song Mercy, I don't know what you're doing, but you're doing it well.</strong></p>
-    <p><strong>I also love reading, or just buying books and stocking them without reading them. I just enjoy the feeling of having them by my side.</strong></p>
-    <p><strong>Good luck!</strong></p>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #4b0082; /* Purple */
+        }
 
-    <h3 class="questions"><strong>Frequently Asked Questions</strong></h3>
-    <p class="questions"><strong>What is the easiest way to learn French in Vienna?</strong></p>
-    <p><strong>The best approach depends on the student's level. If they are a beginner, it's better to combine learning and pronunciation in the lessons, never separately.</strong></p>
-    <p><strong>Pronunciation is key in learning French. Being able to pronounce correctly from the beginning gives the student more confidence.</strong></p>
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
 
-    <p class="questions"><strong>Is French easy to learn?</strong></p>
-    <p><strong>Why wouldn't it be!</strong></p> <!-- Answer now in bold and visible -->
-</section>
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffd700; /* Gold */
+            color: white;
+        }
+
+        header {
+            background-color: #ffd700; /* Golden yellow */
+            color: #4b0082;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #intro {
+            background-color: #5A1A8A; /* Dark Purple */
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        #teacher-description {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f0e68c; /* Light yellow */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .question {
+            font-weight: bold;
+            color: red; /* Red for questions */
+            background-color: #4b0082; /* Purple background for questions */
+            padding: 10px;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .answer {
+            background-color: #fff8dc; /* Light yellow for answers */
+            padding: 10px;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ffd700; /* Golden yellow */
+            color: #4b0082;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .language-switcher {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .language-switcher button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4b0082; /* Purple */
+            color: white;
+            cursor: pointer;
+        }
+
+        .language-switcher button:hover {
+            background-color: #ffd700; /* Gold */
+            color: #4b0082;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="teacher-infos.html">Teacher Info</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Header -->
+    <header>
+        <h1>Meet Your Teacher: Meriem</h1>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="intro">
+        <h2>About Me</h2>
+        <p><strong>Une description n'est qu'un maquillage.</strong><br>
+        Let's meet so you can make your own description of me. <br><br>
+
+        Oh, wait, apparently, I need to write something 🙄<br><br>
+
+        Ok, so I’m 32 years old,<br>
+        I speak French, Arabic, English, German, and a little Spanish.<br><br>
+
+        I graduated in English literature and Anglo-Saxon studies.<br><br>
+
+        - Passionate about writing, especially fiction.<br>
+        - I enjoy playing basketball and traveling.<br><br>
+
+        I don’t know what made you choose French (you must tell me) but as Duffy said in her song “Mercy”<br>
+
+        “I don’t know what you do, but you do it well.”<br><br>
+
+        I also like to read, or only buy books and store them without reading them, I just love having them nearby.<br><br>
+
+        Good luck!</p>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="teacher-description">
+        <div class="question">What is the easiest way to learn French?</div>
+        <div class="answer">
+            The best way to proceed depends on the student's level. <br>
+            If you're a beginner, it's best to combine learning and pronunciation in lessons. Never separately. <br><br>
+            Pronunciation is key in learning French. Being able to pronounce well from the start gives the student more confidence.
+        </div>
+
+        <div class="question">Is French easy to learn?</div>
+        <div class="answer">
+            Why wouldn’t it be!
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </footer>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('fr')">Français</button>
+        <button onclick="changeLanguage('ar')">العربية</button>
+    </div>
+
+    <!-- Language Switch Script -->
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                location.href = 'index-en.html';
+            } else if (lang === 'fr') {
+                location.href = 'index-fr.html';
+            } else if (lang === 'ar') {
+                location.href = 'index-ar.html';
+            }
+        }
+    </script>
+</body>
+</html>
