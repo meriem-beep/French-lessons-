@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>French Lessons with Meriem</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5ff; /* Light yellow */
+            color: #4b0082; /* Purple */
+        }
+
         nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
             text-align: center;
-            background-color: #4b0082;
+            background-color: #4b0082; /* Purple */
         }
 
         nav ul li {
@@ -25,37 +33,57 @@
         }
 
         nav ul li a:hover {
-            background-color: #ffd700;
+            background-color: #ffd700; /* Gold */
             color: white;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f5ff;
-            color: #4b0082;
-        }
-
         header {
-            background-color: #ffd700;
+            background-color: #ffd700; /* Golden yellow */
             color: #4b0082;
             text-align: center;
             padding: 20px;
         }
 
-        header h1 {
-            font-size: 2.5em;
-            margin: 10px 0;
+        #intro {
+            background-color: #5A1A8A; /* Dark Purple */
+            color: white;
+            padding: 40px;
+            text-align: center;
         }
 
-        header p {
+        #tariffs {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            background-color: #fff8dc; /* Light cream yellow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #tariffs h3 {
+            color: #4b0082; /* Purple */
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        #tariffs p {
             font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ffd700; /* Golden yellow */
+            color: #4b0082;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
         .language-switcher {
             text-align: center;
-            margin: 10px 0;
+            margin: 20px 0;
         }
 
         .language-switcher button {
@@ -63,40 +91,27 @@
             margin: 5px;
             border: none;
             border-radius: 5px;
-            background-color: #4b0082;
+            background-color: #4b0082; /* Purple */
             color: white;
             cursor: pointer;
         }
 
         .language-switcher button:hover {
-            background-color: #ffd700;
+            background-color: #ffd700; /* Gold */
             color: #4b0082;
         }
 
-        .tariff-section {
-            text-align: center;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: #fff4cc;
-            border: 2px solid #ffd700;
-            width: 80%;
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 80%;
+            height: auto;
             border-radius: 10px;
-        }
-
-        .tariff-section h2 {
-            font-size: 2em;
-            color: #4b0082;
-            margin-bottom: 15px;
-        }
-
-        .tariff-section p {
-            font-size: 1.5em;
-            color: #4b0082;
-            margin: 5px 0;
         }
     </style>
 </head>
 <body>
+    <!-- Navigation Menu -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -105,37 +120,53 @@
         </ul>
     </nav>
 
-    <!-- Image Section -->
+    <!-- Banner Image -->
+    <img src="IMG_2556.jpg" alt="French Teacher Home Page Banner">
+
+    <!-- Main Header -->
     <header>
-        <img src="IMG_2556.jpg" alt="French Teacher Banner" style="width: 80%; display: block; margin: auto;" />
         <h1>Welcome to French Lessons with Meriem!</h1>
         <p>Experienced French teacher with 10 years of expertise.</p>
     </header>
 
+    <!-- Introduction Section -->
+    <section id="intro">
+        <h2>Learn French with a Skilled Teacher</h2>
+        <p>With over 10 years of experience, I specialize in teaching professionals, kids, families, and diplomats. Whether you're starting from scratch, need to improve your pronunciation, grammar, or prepare for exams, I can guide you through the learning process. I also help you learn to write official documents with confidence.</p>
+    </section>
+
+    <!-- Tariffs Section -->
+    <section id="tariffs">
+        <h3>TARIFS</h3>
+        <p>€15 for 90 minutes</p>
+        <p>Special Packs:</p>
+        <ul>
+            <li>€150 for 12 lessons (standard pack)</li>
+            <li>€200 for 15 pronunciation lessons (pronunciation pack)</li>
+        </ul>
+    </section>
+
     <!-- Language Switcher -->
     <div class="language-switcher">
         <button onclick="changeLanguage('en')">English</button>
-        <button onclick="changeLanguage('ar')">Arabic</button>
-        <button onclick="changeLanguage('fr')">French</button>
+        <button onclick="changeLanguage('fr')">Français</button>
+        <button onclick="changeLanguage('ar')">العربية</button>
     </div>
 
-    <!-- Tariff Section -->
-    <div class="tariff-section">
-        <h2>Tariff Information</h2>
-        <p>1 Lesson: 25€</p>
-        <p>10 Lessons Package: 200€</p>
-        <p>Flexible Timings and Personalized Sessions!</p>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>Contact me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </footer>
 
-    <!-- Script for Language Switcher -->
+    <!-- Language Switch Script -->
     <script>
         function changeLanguage(lang) {
             if (lang === 'en') {
-                window.location.href = 'index-en.html';
-            } else if (lang === 'ar') {
-                window.location.href = 'index-ar.html';
+                location.href = 'index-en.html';
             } else if (lang === 'fr') {
-                window.location.href = 'index-fr.html';
+                location.href = 'index-fr.html';
+            } else if (lang === 'ar') {
+                location.href = 'index-ar.html';
             }
         }
     </script>
