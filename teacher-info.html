@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Info - French Lessons with Meriem</title>
     <style>
-        /* Basic styling to make the navigation visible */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5ff; /* Light yellow */
+            color: #4b0082; /* Purple */
+        }
+
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -27,14 +37,6 @@
             color: white;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f5ff; /* Light yellow */
-            color: #4b0082; /* Purple */
-        }
-
         header {
             background-color: #ffd700; /* Golden yellow */
             color: #4b0082;
@@ -42,20 +44,6 @@
             padding: 20px;
         }
 
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 10px 0;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        /* Dark Purple Bar Section */
         #intro {
             background-color: #5A1A8A; /* Dark Purple */
             color: white;
@@ -63,37 +51,26 @@
             text-align: center;
         }
 
-        #intro h2 {
-            font-size: 2.5em;
-        }
-
-        #intro p {
-            font-size: 1.2em;
-        }
-
-        /* Tariff Section */
         #tariffs {
             text-align: center;
             margin: 20px;
-        }
-
-        #tariffs .price-caption {
-            background-color: #4b0082; /* Purple */
-            color: #fff;
-            padding: 10px;
-            margin: 20px 0;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-
-        #tariffs .packs {
-            background-color: #fff8dc; /* Light cream yellow */
             padding: 20px;
+            border: 2px solid #ffd700;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
-            width: 80%;
-            max-width: 600px;
+            background-color: #fff8dc; /* Light cream yellow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #tariffs h3 {
+            color: #4b0082; /* Purple */
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        #tariffs p {
+            font-size: 1.2em;
         }
 
         footer {
@@ -107,17 +84,17 @@
         }
 
         .language-switcher {
-            margin: 10px 0;
             text-align: center;
+            margin: 20px 0;
         }
 
         .language-switcher button {
-            margin: 5px;
             padding: 10px 15px;
+            margin: 5px;
             border: none;
             border-radius: 5px;
             background-color: #4b0082; /* Purple */
-            color: #fff;
+            color: white;
             cursor: pointer;
         }
 
@@ -126,29 +103,84 @@
             color: #4b0082;
         }
 
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .description {
+            padding: 20px;
+            background-color: #fff8dc; /* Light cream yellow */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .description p {
+            font-size: 1.2em;
+        }
+
+        .description .questions {
+            color: red;
+            font-weight: bold;
+        }
     </style>
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website - Teacher Info</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="teacher-infos.html">Teacher Info</a></li>
+        </ul>
+    </nav>
+
+    <!-- Teacher Info Section -->
     <header>
-        <h1>Teacher Information</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="teacher-info.html">Teacher Info</a></li>
-            </ul>
-        </nav>
+        <h1>About Me</h1>
     </header>
-    <main>
-        <h2>About the Teacher</h2>
-        <p>This page contains information about the teacher.</p>
-    </main>
+
+    <section class="description">
+        <p>Une description n'est qu'un maquillage. Rencontrons-nous pour que tu fasses ta propre description de moi.</p>
+        <p>Oh, attends, apparemment, je dois écrire quelque chose 🙄</p>
+        <p>Ok alors j'ai 30 ans, je parle français, arabe, anglais et un peu espagnol et allemand.</p>
+        <p>Je suis diplômée en littérature anglaise et en études anglo-saxonnes.</p>
+        <ul>
+            <li>Passionnée par l'écriture, notamment de fiction.</li>
+            <li>J'aime jouer au basket et voyager.</li>
+        </ul>
+        <p>Je ne sais pas ce qui t'a poussé à choisir le français (tu dois absolument m'en parler) mais comme Duffy l'a dit dans sa chanson Mercy, je ne sais pas ce que tu fais, mais tu le fais bien.</p>
+        <p>J'aime aussi lire, ou seulement acheter des livres et les stocker sans les lire, j'aime juste la sensation de les avoir à mes côtés.</p>
+        <p>Bonne chance !</p>
+
+        <h3 class="questions">Questions fréquemment posées</h3>
+        <p class="questions">Quelle est la manière la plus simple d’apprendre le français à Vienne ?</p>
+        <p>La meilleure façon de procéder dépend du niveau de l'élève. S'il s'agit d'un débutant, il est préférable de combiner l'apprentissage et la prononciation dans les leçons. Jamais séparément.</p>
+        <p>La prononciation est une clé dans l'apprentissage du français, être capable de bien prononcer dès le début donne plus de confiance à l'élève.</p>
+
+        <p class="questions">Le français est-il facile à apprendre ?</p>
+        <p>Pourquoi ne le serait-il pas !</p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <p>Contact me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
     </footer>
+
+    <!-- Language Switch Script -->
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                location.href = 'index-en.html';
+            } else if (lang === 'fr') {
+                location.href = 'index-fr.html';
+            } else if (lang === 'ar') {
+                location.href = 'index-ar.html';
+            }
+        }
+    </script>
 </body>
 </html>
