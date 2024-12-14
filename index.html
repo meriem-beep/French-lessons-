@@ -43,6 +43,56 @@
             color: white;
         }
 
+        /* Header */
+        header {
+            background-color: #ffd700; /* Golden yellow */
+            color: #4b0082;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Introduction Section */
+        #intro {
+            background-color: #5A1A8A; /* Dark Purple */
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Tariffs Section */
+        #tariffs {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            background-color: #fff8dc; /* Light cream yellow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #tariffs h3 {
+            color: #4b0082; /* Purple */
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        #tariffs p {
+            font-size: 1.2em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #ffd700; /* Golden yellow */
+            color: #4b0082;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
         /* Language Switcher */
         .language-switcher {
             text-align: center;
@@ -62,6 +112,36 @@
         .language-switcher button:hover {
             background-color: #ffd700; /* Gold */
             color: #4b0082;
+        }
+
+        /* Image Styles */
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            #intro {
+                padding: 20px;
+            }
+
+            #tariffs {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
@@ -83,6 +163,23 @@
         <h1>Welcome to French Lessons with Meriem!</h1>
         <p>Experienced French teacher with 10 years of expertise.</p>
     </header>
+
+    <!-- Introduction Section -->
+    <section id="intro">
+        <h2>Learn French with a Skilled Teacher</h2>
+        <p>With over 10 years of experience, I specialize in teaching professionals, kids, families, and diplomats. Whether you're starting from scratch, need to improve your pronunciation, grammar, or prepare for exams, I can guide you through the learning process.</p>
+    </section>
+
+    <!-- Tariffs Section -->
+    <section id="tariffs">
+        <h3>TARIFS</h3>
+        <p>€15 for 90 minutes</p>
+        <p>Special Packs:</p>
+        <ul>
+            <li>€150 for 12 lessons (standard pack)</li>
+            <li>€200 for 15 pronunciation lessons (pronunciation pack)</li>
+        </ul>
+    </section>
 
     <!-- Language Switcher -->
     <div class="language-switcher">
