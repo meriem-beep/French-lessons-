@@ -13,7 +13,11 @@
             background-color: #f9f5ff; /* Light yellow */
             color: #4b0082; /* Purple */
         }
-
+        <div class="language-switcher">
+    <button onclick="changeLanguage('en')">English</button>
+    <button onclick="changeLanguage('ar')">العربية</button>
+    <button onclick="changeLanguage('de')">Deutsch</button>
+</div>
         /* Navigation Menu */
         nav {
             background-color: #4b0082; /* Purple */
@@ -193,17 +197,22 @@
         <p>Contact me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
     </footer>
 
-    <!-- Language Switch Script -->
-    <script>
-        function changeLanguage(lang) {
-            if (lang === 'en') {
-                location.href = 'index-en.html';
-            } else if (lang === 'fr') {
-                location.href = 'index-fr.html';
-            } else if (lang === 'ar') {
-                location.href = 'index-ar.html';
-            }
+  <!-- Other content of the page -->
+
+<!-- Language Switch Script -->
+<script>
+    function changeLanguage(lang) {
+        if (lang === 'en') {
+            location.href = 'index-en.html';  // Redirect to English page
+        } else if (lang === 'ar') {
+            location.href = 'index-ar.html';  // Redirect to Arabic page
+        } else if (lang === 'de') {
+            location.href = 'index-de.html';  // Redirect to German page
         }
-    </script>
+    }
+</script>
+</body>
+</html>
+
 </body>
 </html>
