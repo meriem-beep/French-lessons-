@@ -183,20 +183,23 @@
 
     <!-- Language Switcher -->
     <div class="language-switcher">
-        <button onclick="switchLanguage('index.html')">English</button>
-        <button onclick="switchLanguage('index-ar.html')">Arabic</button>
-        <button onclick="switchLanguage('index-de.html')">German</button>
+        <label for="language-select">Choose a language:</label>
+        <select id="language-select" onchange="switchLanguage()">
+            <option value="index.html">English</option>
+            <option value="index-ar.html">Arabic</option>
+            <option value="index-de.html">German</option>
+        </select>
     </div>
-
     <!-- Footer -->
     <footer>
         <p>Contact me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
     </footer>
 
     <script>
-        function switchLanguage(file) {
-            window.location.href = file;
-        }
-    </script>
+    function switchLanguage() {
+        const selectedLanguage = document.getElementById("language-select").value;
+        window.location.href = selectedLanguage;
+    }
+</script>
 </body>
 </html>
