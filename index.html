@@ -63,17 +63,22 @@
         }
         #teacher-info {
             background-image: url('IMG_2556.jpg'); /* Corrected image path */
-            background-size: contain; /* Adjust image size */
+            background-size: cover; /* Ensures the image covers the area without repeating */
             background-position: center;
-            height: 250px; /* Reduced height for smaller image */
+            height: 250px; /* Adjusted height */
             color: white;
             text-align: center;
-            padding: 50px;
+            padding: 50px 20px 20px 20px; /* Adjusted padding to avoid text overlap */
+            position: relative;
         }
         #teacher-info p {
             font-size: 20px;
             color: black; /* Changed text color to black */
             font-weight: bold; /* Made text bold */
+            position: absolute; /* Absolute positioning for text */
+            top: 10px; /* Adjusted to keep the text above the image */
+            width: 100%; /* Ensure the text takes the full width */
+            text-align: center; /* Center the text */
         }
         .teacher-info-link {
             color: white;
@@ -102,7 +107,6 @@
 
 <!-- Teacher Info Section with unique content -->
 <section id="teacher-info">
-    <h2>About Meriem</h2>
     <p>With years of experience teaching French, I tailor lessons to meet your specific needs, whether you're learning for travel, business, exams, or simply to enjoy the language.</p>
     <a href="teacher-info.html" class="teacher-info-link">Learn More About My Teaching Approach</a>
 </section>
