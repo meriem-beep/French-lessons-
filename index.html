@@ -3,13 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn French with Meriem, an experienced teacher offering personalized lessons for professionals, families, and kids. Affordable prices and tailored programs.">
-    <meta name="keywords" content="Learn French, French lessons, French teacher, French for professionals, French for kids, French pronunciation, online French lessons">
-    <meta name="author" content="Meriem Bensaid">
     <title>French Lessons with Meriem</title>
     <style>
-        /* Styles unchanged for simplicity */
-        ...
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5ff; /* Light yellow */
+            color: #4b0082; /* Purple */
+        }
+
+        /* Navigation Menu */
+        nav {
+            background-color: #4b0082; /* Purple */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffd700; /* Gold */
+            color: white;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffd700; /* Golden yellow */
+            color: #4b0082;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Introduction Section */
+        #intro {
+            background-color: #5A1A8A; /* Dark Purple */
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Tariffs Section */
+        #tariffs {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            background-color: #fff8dc; /* Light cream yellow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #tariffs h3 {
+            color: #4b0082; /* Purple */
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        #tariffs p {
+            font-size: 1.2em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #ffd700; /* Golden yellow */
+            color: #4b0082;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .language-switcher select {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4b0082; /* Purple */
+            color: white;
+            cursor: pointer;
+        }
+
+        .language-switcher select:hover {
+            background-color: #ffd700; /* Gold */
+            color: #4b0082;
+        }
+
+        /* Image Styles */
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 50%; /* Resizing the image to 50% */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            #intro {
+                padding: 20px;
+            }
+
+            #tariffs {
+                font-size: 1.2em;
+            }
+
+            img {
+                max-width: 90%; /* Resize image for small screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -19,8 +157,6 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="teacher-info.html">Teacher Info</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -50,47 +186,14 @@
         </ul>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h3>What My Students Say</h3>
-        <blockquote>
-            <p>"Meriem's lessons are engaging and tailored to my needs. My French has improved significantly!" - <strong>John D.</strong></p>
-        </blockquote>
-        <blockquote>
-            <p>"I passed my DELF exam thanks to her excellent teaching. Highly recommend!" - <strong>Sarah L.</strong></p>
-        </blockquote>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq">
-        <h3>Frequently Asked Questions</h3>
-        <ul>
-            <li><strong>What levels do you teach?</strong> I teach beginners to advanced learners, including professionals and kids.</li>
-            <li><strong>Are the lessons online or in-person?</strong> I offer online lessons, which provide flexibility for students worldwide.</li>
-            <li><strong>What materials do you use?</strong> Customized materials based on your goals, including grammar guides and pronunciation exercises.</li>
-        </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h3>Get in Touch</h3>
-        <p>Have questions or ready to start? Contact me at:</p>
-        <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p>Or call: +123 456 7890</p>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
     <!-- Language Switcher -->
     <div class="language-switcher">
-        ...
+        <label for="language-select">Choose a language:</label>
+        <select id="language-select" onchange="switchLanguage()">
+            <option value="index-en.html">English</option>
+            <option value="index-ar.html">Arabic</option>
+            <option value="index-de.html">German</option>
+        </select>
     </div>
 
     <!-- Footer -->
@@ -99,7 +202,10 @@
     </footer>
 
     <script>
-        ...
+        function switchLanguage() {
+            const selectedLanguage = document.getElementById("language-select").value;
+            window.location.href = selectedLanguage;
+        }
     </script>
 </body>
 </html>
