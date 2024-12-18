@@ -62,7 +62,7 @@
             background-color: #4CAF50;
         }
         #teacher-info {
-            background-image: url('your-image-path.jpg'); /* Replace with correct path */
+            background-image: url('IMG_2556.jpg'); /* Corrected image path */
             background-size: cover;
             background-position: center;
             height: 300px;
@@ -72,6 +72,17 @@
         }
         #teacher-info p {
             font-size: 18px;
+            color: white; /* Ensured text is visible */
+        }
+        .teacher-info-link {
+            color: white;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .teacher-info-link:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -84,14 +95,15 @@
 
 <nav>
     <a href="#services">Services</a>
-    <a href="#blog">Blog</a>
-    <a href="#teacher-info">Teacher Info</a>
+    <a href="blog.html">Blog</a> <!-- Link to blog page -->
+    <a href="teacher-info.html">Teacher Info</a> <!-- Link to teacher info page -->
 </nav>
 
 <!-- Teacher Info Section with unique content -->
 <section id="teacher-info">
     <h2>About Meriem</h2>
     <p>With years of experience teaching French, I tailor lessons to meet your specific needs, whether you're learning for travel, business, exams, or simply to enjoy the language.</p>
+    <a href="teacher-info.html" class="teacher-info-link">Learn More About My Teaching Approach</a>
 </section>
 
 <section id="services">
