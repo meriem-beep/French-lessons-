@@ -99,7 +99,7 @@
             margin: 20px 0;
         }
 
-        .language-switcher button {
+        .language-switcher select {
             padding: 10px 15px;
             margin: 5px;
             border: none;
@@ -109,7 +109,7 @@
             cursor: pointer;
         }
 
-        .language-switcher button:hover {
+        .language-switcher select:hover {
             background-color: #ffd700; /* Gold */
             color: #4b0082;
         }
@@ -185,7 +185,7 @@
     <div class="language-switcher">
         <label for="language-select">Choose a language:</label>
         <select id="language-select" onchange="switchLanguage()">
-            <option value="index.html">English</option>
+            <option value="index-en.html">English</option>
             <option value="index-ar.html">Arabic</option>
             <option value="index-de.html">German</option>
         </select>
@@ -201,6 +201,15 @@
             const selectedLanguage = document.getElementById("language-select").value;
             window.location.href = selectedLanguage;
         }
+
+        // Ensure autofocus doesn't cause issues.
+        document.addEventListener("DOMContentLoaded", function() {
+            // Remove autofocus attributes from elements that are already focused
+            const focusedElement = document.querySelector(':focus');
+            if (focusedElement) {
+                focusedElement.blur(); // Remove focus if any element is already focused
+            }
+        });
     </script>
 </body>
 </html>
