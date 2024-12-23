@@ -1,98 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>6-Month Challenge Form</title>
+    <meta name="description" content="Learn French with Meriem, an experienced teacher offering personalized lessons for all levels.">
+    <meta name="keywords" content="Learn French, French lessons, French tutor, online French teacher">
+    <meta name="author" content="Meriem">
+    <title>Learn French with Meriem</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Fixed position for the 6-Month Challenge Box */
+        /* Fixed 6-Month Challenge Box */
         #challenge-box {
             position: fixed;
-            top: 0;
-            left: 0;
+            top: 20px; /* Adjust this to place the box where needed */
+            left: 10px;
             background-color: #ffcccc;
             color: red;
-            padding: 20px;
+            padding: 10px;
             border: 2px solid red;
             border-radius: 5px;
             z-index: 1000;
-            width: 350px; /* Adjust the width to make it smaller */
+            width: 220px; /* Adjust width for smaller size */
             box-sizing: border-box;
         }
 
-        /* Form Styles */
-        form {
+        /* Adjust layout for forms */
+        .form-container {
             display: flex;
-            flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
-            gap: 10px; /* Adds space between elements */
+            flex-wrap: wrap;
+            gap: 20px; /* Space between the two forms */
+            justify-content: center;
+            margin: 20px auto;
+            width: 90%; /* Keeps it responsive */
+            max-width: 1200px; /* Prevents stretching on larger screens */
         }
 
-        label {
-            flex-basis: 100%; /* Make labels take the full width */
-            font-size: 14px; /* Smaller font size for labels */
+        form {
+            width: 100%;
+            max-width: 400px; /* Make forms smaller */
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        input, textarea, button {
-            flex-basis: 48%; /* Inputs take up less space and sit next to each other */
-            font-size: 14px; /* Smaller font size for inputs and buttons */
-            padding: 5px;
-            box-sizing: border-box; /* Include padding in width */
+        form input,
+        form textarea,
+        form button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
         }
 
-        textarea {
-            flex-basis: 100%; /* Textarea spans the full width */
-            resize: none; /* Prevent resizing */
-        }
-
-        button {
-            flex-basis: 100%; /* Button spans the full width */
-            background-color: red;
+        form button {
+            background-color: #007BFF;
             color: white;
             border: none;
             cursor: pointer;
             padding: 10px;
         }
 
-        button:hover {
-            background-color: darkred; /* Change color on hover */
+        form button:hover {
+            background-color: #0056b3;
         }
 
-        /* Add padding to the body content to prevent overlap */
-        body {
-            margin-top: 120px;
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .form-container {
+                flex-direction: column; /* Stack forms vertically on smaller screens */
+            }
+
+            #challenge-box {
+                top: 10px;
+                left: 5px;
+                width: 180px; /* Smaller on small screens */
+            }
         }
     </style>
 </head>
+
 <body>
-    <!-- 6-Month Challenge Box -->
+    <!-- Fixed 6-Month Challenge Box -->
     <div id="challenge-box">
-        <h2>6-Month Challenge Form</h2>
-        <form method="POST" action="submit-challenge">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <h4>🚨 6-Month Challenge</h4>
+        <p>90 min, 4x/week</p>
+        <p>💰 200 Euros/month</p>
+        <a href="challenge-form.html" style="display: inline-block; padding: 5px 10px; background-color: red; color: white; text-decoration: none; border-radius: 3px;">Join Now</a>
+    </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="goal">Your Goal:</label>
-            <textarea id="goal" name="goal" rows="4" required></textarea>
-
+    <!-- Forms Section -->
+    <section class="form-container">
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/xjkkbrlj" method="POST">
+            <h2>Contact Me</h2>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            <label for="goals">Language Learning Goals</label>
+            <textarea id="goals" name="goals" placeholder="What do you want to focus on?"></textarea>
             <button type="submit">Submit</button>
         </form>
-    </div>
 
-    <!-- Main Content -->
-    <div>
-        <h1>Welcome to the Challenge</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis tincidunt lacus, sit amet bibendum velit.</p>
-        <p>Scroll down to read more!</p>
-        <p>...Additional content...</p>
-    </div>
+        <!-- 6-Month Challenge Form -->
+        <form action="https://formspree.io/f/xjkkbrlj" method="POST">
+            <h2>6-Month Challenge</h2>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            <label for="availability">Preferred Lesson Times</label>
+            <textarea id="availability" name="availability" placeholder="Your availability"></textarea>
+            <button type="submit">Join Now</button>
+        </form>
+    </section>
 </body>
+
 </html>
 
-
-    
     <header>
         <nav>
             <ul>
