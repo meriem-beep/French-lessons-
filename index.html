@@ -114,6 +114,19 @@
             text-align: center; /* Center titles for services and understanding challenges */
         }
 
+        /* Signal Link Styling */
+        #signal-link {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: yellow;
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             nav a {
@@ -174,10 +187,8 @@
             <button type="submit">Submit</button>
         </form>
 
-        <!-- 6-Months Challenge Link -->
-        <div style="text-align: center; margin-top: 20px;">
-            <a href="#challenge-form" style="font-weight: bold; color: red;">🚨 6-Months Challenge Details</a>
-        </div>
+        <!-- Signal for 6-Months Challenge Page Link -->
+        <a id="signal-link" href="6-months-challenge.html">🚨 Click here for the 6-Months Challenge Details!</a>
 
         <!-- 6-Months Challenge Form -->
         <form id="challenge-form" action="https://formspree.io/f/xjkkbrlj" method="POST">
