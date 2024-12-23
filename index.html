@@ -15,37 +15,9 @@
             color: #333;
         }
 
-        h1 {
+        h1, h2 {
             text-align: center;
-            color: #333;
-        }
-
-        /* Navigation Styles */
-        header {
-            background-color: #333;
-            padding: 10px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            color: #f39c12;
+            color: purple; /* Added purple color to titles */
         }
 
         .form-container {
@@ -78,7 +50,8 @@
 
         form input,
         form textarea,
-        form button {
+        form button,
+        form input[type="date"] {
             width: 100%;
             margin-bottom: 15px;
             padding: 10px;
@@ -116,11 +89,10 @@
             margin-bottom: 20px;
         }
 
-        /* Hero Section */
-        #hero img {
-            width: 50%;
-            display: block;
-            margin: 0 auto;
+        /* Centering Titles */
+        #services h2,
+        #student-needs h2 {
+            text-align: center; /* Center titles for services and understanding challenges */
         }
 
         /* Responsive Design */
@@ -133,26 +105,13 @@
             form {
                 width: 90%;
             }
-
-            nav ul li {
-                display: block;
-                margin: 10px 0;
-            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="teacher-info.html">Teacher Info</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-            </ul>
-        </nav>
+        <h1>French Lessons with Meriem</h1>
     </header>
 
     <section class="form-container">
@@ -165,6 +124,8 @@
             <input type="email" id="email" name="email" placeholder="Your Email Address" required>
             <label for="goals">Language Learning Goals</label>
             <textarea id="goals" name="goals" placeholder="What do you want to focus on?"></textarea>
+            <label for="first-lesson-date">Choose your FREE First Lesson</label>
+            <input type="date" id="first-lesson-date" name="first-lesson-date" required>
             <button type="submit">Submit</button>
         </form>
 
@@ -187,14 +148,14 @@
     </section>
 
     <section id="hero">
-        <img src="IMG_2556.jpg" alt="Learn French">
+        <img src="IMG_2556.jpg" alt="Learn French" style="width: 50%; display: block; margin: 0 auto;">
         <div style="text-align: center; margin-top: 20px;">
             <p style="font-size: 1.5em; font-weight: bold; color: black;">With years of experience teaching French, I tailor lessons to meet your specific needs, whether you're learning for travel, business, exams, or simply to enjoy the language.</p>
         </div>
     </section>
 
     <section id="student-needs">
-        <h2>Understanding Your Challenges</h2>
+        <h2 style="font-weight: bold;">Understanding Your Challenges</h2>
         <p>Learning French (<em>apprendre le français</em>) can be challenging, but with the right support, it becomes enjoyable and rewarding. I understand the difficulties students face, such as:</p>
         <ul>
             <li><strong>Pronunciation challenges</strong> (<em>les défis de la prononciation</em>)</li>
@@ -207,7 +168,7 @@
     </section>
 
     <section id="services">
-        <h2>My Services</h2>
+        <h2 style="font-weight: bold;">My Services</h2>
         <ul>
             <li>Customized lessons for all levels</li>
             <li>French for travel, business, and exams</li>
@@ -218,13 +179,13 @@
     </section>
 
     <section id="tariffs" style="background-color: #f9f9f9; padding: 20px; margin: 20px 0; text-align: center; border: 1px solid #ddd;">
-        <h2>Tariffs</h2>
+        <h2 style="font-weight: bold;">Tariffs</h2>
         <p style="font-size: 1.2em;">💰 <strong>150 Euros</strong> for 12 lessons of 90 minutes</p>
         <p style="font-size: 1.2em;">💰 <strong>200 Euros</strong> for 15 pronunciation lessons of 90 minutes</p>
     </section>
 
     <section id="testimonials">
-        <h2>Testimonials</h2>
+        <h2 style="font-weight: bold;">Testimonials</h2>
         <p><strong>Samia and Sarah (Saudi Arabia):</strong> "Meriem made learning French from scratch enjoyable and effective. We had so much fun and learned a lot!"</p>
         <p><strong>Stay-at-home mother (Dubai):</strong> "Thanks to Meriem, I'm almost fluent in French. Her lessons are engaging and tailored to my needs."</p>
         <p><strong>Aeronautics researcher (UAE):</strong> "Meriem helped me learn French for research purposes. Her clear explanations were invaluable."</p>
