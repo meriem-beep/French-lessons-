@@ -3,39 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn French with Meriem, an experienced teacher offering personalized lessons for all levels. Overcome pronunciation challenges, master grammar, and speak confidently.">
-    <meta name="keywords" content="Learn French, French lessons, French tutor, online French teacher, French for exams, French for beginners">
-    <meta name="author" content="Meriem">
-    <title>Learn French with Meriem</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>6-Month Challenge Form</title>
+    <style>
+        /* Fixed position for the 6-Month Challenge Box */
+        #challenge-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #ffcccc;
+            color: red;
+            padding: 20px;
+            border: 2px solid red;
+            border-radius: 5px;
+            z-index: 1000;
+            width: 350px; /* Adjust the width to make it smaller */
+            box-sizing: border-box;
+        }
+
+        /* Form Styles */
+        form {
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+            gap: 10px; /* Adds space between elements */
+        }
+
+        label {
+            flex-basis: 100%; /* Make labels take the full width */
+            font-size: 14px; /* Smaller font size for labels */
+        }
+
+        input, textarea, button {
+            flex-basis: 48%; /* Inputs take up less space and sit next to each other */
+            font-size: 14px; /* Smaller font size for inputs and buttons */
+            padding: 5px;
+            box-sizing: border-box; /* Include padding in width */
+        }
+
+        textarea {
+            flex-basis: 100%; /* Textarea spans the full width */
+            resize: none; /* Prevent resizing */
+        }
+
+        button {
+            flex-basis: 100%; /* Button spans the full width */
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        button:hover {
+            background-color: darkred; /* Change color on hover */
+        }
+
+        /* Add padding to the body content to prevent overlap */
+        body {
+            margin-top: 120px;
+        }
+    </style>
 </head>
 <body>
-    <section id="CONTACT">
-    <h2><a href="mailto:frenchforeveryone74@gmail.com" style="text-decoration: none; color: inherit;">Contact</a></h2>
-    <p>Feel free to reach out to me at:</p>
-    <a href="mailto:frenchforeveryone74@gmail.com" style="text-decoration: underline; color: #0000EE;">frenchforeveryone74@gmail.com</a>
-</section>
-    <section id="contact">
-  <h2>Contact Me</h2>
-  <p>Fill out this form, and I’ll get back to you soon!</p>
-  <form action="https://formspree.io/f/xjkkbrlj" method="POST">
-    <label for="name">Full Name</label>
-    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+    <!-- 6-Month Challenge Box -->
+    <div id="challenge-box">
+        <h2>6-Month Challenge Form</h2>
+        <form method="POST" action="submit-challenge">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <label for="goals">Language Learning Goals</label>
-    <textarea id="goals" name="goals" placeholder="What do you want to focus on? Pronunciation, grammar, speaking, etc."></textarea>
+            <label for="goal">Your Goal:</label>
+            <textarea id="goal" name="goal" rows="4" required></textarea>
 
-    <!-- Added a calendar section -->
-<label for="lesson_date">Choose a Date for Your Free Lesson (1 Hour)</label>
-<input type="datetime-local" id="lesson_date" name="lesson_date" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
+    <!-- Main Content -->
+    <div>
+        <h1>Welcome to the Challenge</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis tincidunt lacus, sit amet bibendum velit.</p>
+        <p>Scroll down to read more!</p>
+        <p>...Additional content...</p>
+    </div>
+</body>
+</html>
 
-    <button type="submit">Submit</button>
-  </form>
-</section>
 
     
     <header>
