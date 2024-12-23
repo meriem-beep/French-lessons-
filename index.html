@@ -54,13 +54,7 @@
     <p style="margin: 5px 0; font-size: 0.9em;">💰 200 Euros/month</p>
     <a href="challenge-form.html" style="font-size: 0.9em; font-weight: bold; color: white; background-color: red; padding: 5px 10px; text-decoration: none; border-radius: 3px; display: inline-block; text-align: center;">Join Now</a>
 </div>
-<!-- Red Signal Box -->
-<div style="position: fixed; top: 20%; left: 10px; background-color: #ffcccc; color: red; padding: 10px; border: 2px solid red; border-radius: 5px; z-index: 1000; width: 250px;">
-    <h4 style="margin: 0; font-size: 1.1em;">🚨 6-Month Challenge</h4>
-    <p style="margin: 5px 0; font-size: 0.9em;">90 min, 4x/week</p>
-    <p style="margin: 5px 0; font-size: 0.9em;">💰 200 Euros/month</p>
-    <a href="challenge-form.html" style="font-size: 0.9em; font-weight: bold; color: white; background-color: red; padding: 5px 10px; text-decoration: none; border-radius: 3px; display: inline-block; text-align: center;">Join Now</a>
-</div>
+
     <section id="hero">
         <img src="IMG_2556.jpg" alt="Learn French" style="width: 50%; display: block; margin: 0 auto;">
         <div style="text-align: center; margin-top: 20px;">
@@ -109,5 +103,23 @@
     <footer>
         <p>© 2024 Learn French with Meriem. All rights reserved.</p>
     </footer>
+    <!-- Booking Calendar Box -->
+<div style="position: fixed; top: 20%; right: 10px; background-color: #e6f7ff; color: #00509e; padding: 10px; border: 2px solid #00509e; border-radius: 5px; z-index: 1000; width: 250px;">
+    <h4 style="margin: 0; font-size: 1.1em;">📅 Free First Hour</h4>
+    <p style="margin: 5px 0; font-size: 0.9em;">Book your first free lesson</p>
+    <form action="https://formspree.io/f/xjkkbrlj" method="POST">
+        <label for="calendar" style="font-size: 0.9em;">Select Date:</label>
+        <input type="date" id="calendar" name="date" style="width: 100%; margin: 5px 0;" min="2025-01-01" required>
+
+        <label for="name" style="font-size: 0.9em;">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" style="width: 100%; margin: 5px 0;" required>
+
+        <label for="email" style="font-size: 0.9em;">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" style="width: 100%; margin: 5px 0;" required>
+
+        <button type="submit" style="font-size: 0.9em; font-weight: bold; color: white; background-color: #00509e; padding: 5px 10px; border: none; border-radius: 3px; width: 100%;">Book Now</button>
+    </form>
+</div>
+
 </body>
 </html>
