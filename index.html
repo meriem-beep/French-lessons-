@@ -20,6 +20,34 @@
             color: #333;
         }
 
+        /* Navigation Styles */
+        header {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
         .form-container {
             display: flex;
             justify-content: space-evenly;
@@ -88,6 +116,13 @@
             margin-bottom: 20px;
         }
 
+        /* Hero Section */
+        #hero img {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .form-container {
@@ -98,13 +133,26 @@
             form {
                 width: 90%;
             }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>French Lessons with Meriem</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teacher-info.html">Teacher Info</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="form-container">
@@ -137,55 +185,16 @@
             <button type="submit">Join Now</button>
         </form>
     </section>
-</body>
-
-</html>
-
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="teacher-info.html">Teacher Info</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-            </ul>
-        </nav>
-    </header>
-  <!-- Red Signal Box -->
-<div id="challenge-box">
-    <h4 style="margin: 0; font-size: 1.1em;">🚨 6-Month Challenge</h4>
-    <p style="margin: 5px 0; font-size: 0.9em;">90 min, 4x/week</p>
-    <p style="margin: 5px 0; font-size: 0.9em;">💰 200 Euros/month</p>
-
-    <!-- 6-Month Challenge Form -->
-    <form action="https://formspree.io/f/xjkkbrlj" method="POST">
-        <a href="challenge-form.html" style="font-size: 0.9em; font-weight: bold; color: white; background-color: red; padding: 5px 10px; text-decoration: none; border-radius: 3px; display: inline-block; text-align: center;">Join Now</a>
-        
-        <label for="challenge_name">Full Name</label>
-        <input type="text" id="challenge_name" name="challenge_name" placeholder="Your Full Name" required>
-
-        <label for="challenge_email">Email</label>
-        <input type="email" id="challenge_email" name="challenge_email" placeholder="Your Email Address" required>
-
-        <label for="challenge_goals">Learning Goals</label>
-        <textarea id="challenge_goals" name="challenge_goals" placeholder="What are your goals for the 6-month challenge?"></textarea>
-
-        <button type="submit">Submit</button>
-    </form>
-</div>
-
-
 
     <section id="hero">
-        <img src="IMG_2556.jpg" alt="Learn French" style="width: 50%; display: block; margin: 0 auto;">
+        <img src="IMG_2556.jpg" alt="Learn French">
         <div style="text-align: center; margin-top: 20px;">
             <p style="font-size: 1.5em; font-weight: bold; color: black;">With years of experience teaching French, I tailor lessons to meet your specific needs, whether you're learning for travel, business, exams, or simply to enjoy the language.</p>
         </div>
     </section>
 
     <section id="student-needs">
-        <h2 style="font-weight: bold;">Understanding Your Challenges</h2>
+        <h2>Understanding Your Challenges</h2>
         <p>Learning French (<em>apprendre le français</em>) can be challenging, but with the right support, it becomes enjoyable and rewarding. I understand the difficulties students face, such as:</p>
         <ul>
             <li><strong>Pronunciation challenges</strong> (<em>les défis de la prononciation</em>)</li>
@@ -198,7 +207,7 @@
     </section>
 
     <section id="services">
-        <h2 style="font-weight: bold;">My Services</h2>
+        <h2>My Services</h2>
         <ul>
             <li>Customized lessons for all levels</li>
             <li>French for travel, business, and exams</li>
@@ -209,13 +218,13 @@
     </section>
 
     <section id="tariffs" style="background-color: #f9f9f9; padding: 20px; margin: 20px 0; text-align: center; border: 1px solid #ddd;">
-        <h2 style="font-weight: bold;">Tariffs</h2>
+        <h2>Tariffs</h2>
         <p style="font-size: 1.2em;">💰 <strong>150 Euros</strong> for 12 lessons of 90 minutes</p>
         <p style="font-size: 1.2em;">💰 <strong>200 Euros</strong> for 15 pronunciation lessons of 90 minutes</p>
     </section>
 
     <section id="testimonials">
-        <h2 style="font-weight: bold;">Testimonials</h2>
+        <h2>Testimonials</h2>
         <p><strong>Samia and Sarah (Saudi Arabia):</strong> "Meriem made learning French from scratch enjoyable and effective. We had so much fun and learned a lot!"</p>
         <p><strong>Stay-at-home mother (Dubai):</strong> "Thanks to Meriem, I'm almost fluent in French. Her lessons are engaging and tailored to my needs."</p>
         <p><strong>Aeronautics researcher (UAE):</strong> "Meriem helped me learn French for research purposes. Her clear explanations were invaluable."</p>
@@ -226,6 +235,6 @@
         <p>© 2024 Learn French with Meriem. All rights reserved.</p>
     </footer>
 
-
 </body>
+
 </html>
