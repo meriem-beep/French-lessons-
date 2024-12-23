@@ -125,22 +125,19 @@ footer::after {
 /* Fixed position for the 6-Month Challenge Box */
 #challenge-box {
     position: fixed;
-    top: 20%; /* Adjust this value based on where you want the box */
-    left: 10px; /* Keeps it 10px from the left side of the screen */
+    top: 0;
+    left: 0;
     background-color: #ffcccc;
     color: red;
-    padding: 10px;
+    padding: 20px;
     border: 2px solid red;
     border-radius: 5px;
-    z-index: 1000; /* Ensures it stays above other content */
-    width: 250px; /* Set the width of the box */
-    box-sizing: border-box; /* Ensure padding is included in the width */
-    overflow: auto; /* Prevents content overflow inside the box */
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Add padding to the top of the body or the first section below the box */
+/* Add padding to the body content to prevent overlap */
 body {
-    padding-top: 160px; /* This ensures the content below isn't hidden under the fixed box */
+    margin-top: 100px;
 }
-
-</style>
