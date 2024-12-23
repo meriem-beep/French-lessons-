@@ -135,6 +135,12 @@ footer::after {
     z-index: 1000; /* Ensures it stays above other content */
     width: 250px; /* Set the width of the box */
     box-sizing: border-box; /* Ensure padding is included in the width */
+    overflow: auto; /* Prevents content overflow inside the box */
+}
+
+/* Add padding to the top of the body or the first section below the box */
+body {
+    padding-top: 160px; /* This ensures the content below isn't hidden under the fixed box */
 }
 
 </style>
