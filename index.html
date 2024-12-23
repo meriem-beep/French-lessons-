@@ -40,11 +40,11 @@
 
         .form-container {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between; /* Ensure the forms are next to each other */
             align-items: flex-start;
             margin: 20px;
             gap: 20px;
-            flex-wrap: wrap; /* Added to ensure wrapping on mobile */
+            flex-wrap: nowrap; /* Prevent forms from wrapping */
         }
 
         form {
@@ -53,7 +53,7 @@
             border: 1px solid #ccc;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 45%; /* Adjusted width for better responsiveness */
+            width: 48%; /* Adjusted to ensure forms fit side by side */
             box-sizing: border-box;
         }
 
@@ -108,23 +108,24 @@
             margin-bottom: 20px;
         }
 
+        /* SIGNAL for the 6-Months Challenge Link */
+        #challenge-link {
+            font-weight: bold;
+            color: #ffcc00; /* Yellow color */
+            font-size: 1.5em;
+            text-align: center;
+            padding: 10px;
+            background-color: #ffcc00;
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
         /* Centering Titles */
         #services h2,
         #student-needs h2 {
             text-align: center; /* Center titles for services and understanding challenges */
-        }
-
-        /* Signal Link Styling */
-        #signal-link {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: yellow;
-            background-color: black;
-            padding: 10px;
-            text-align: center;
-            width: 100%;
-            display: block;
-            margin-bottom: 20px;
         }
 
         /* Responsive Design */
@@ -172,6 +173,11 @@
         <h1>French Lessons with Meriem</h1>
     </header>
 
+    <!-- SIGNAL Link for 6-Month Challenge -->
+    <div id="challenge-link" onclick="window.location.href='6months-challenge.html'">
+        🚨 Click Here to Learn About the 6-Month Challenge 🚨
+    </div>
+
     <section class="form-container">
         <!-- Contact Form -->
         <form action="https://formspree.io/f/xjkkbrlj" method="POST">
@@ -186,9 +192,6 @@
             <input type="date" id="first-lesson-date" name="first-lesson-date" required>
             <button type="submit">Submit</button>
         </form>
-
-        <!-- Signal for 6-Months Challenge Page Link -->
-        <a id="signal-link" href="6-months-challenge.html">🚨 Click here for the 6-Months Challenge Details!</a>
 
         <!-- 6-Months Challenge Form -->
         <form id="challenge-form" action="https://formspree.io/f/xjkkbrlj" method="POST">
@@ -232,31 +235,4 @@
         <h2 style="font-weight: bold;">My Services</h2>
         <ul>
             <li>Customized lessons for all levels</li>
-            <li>French for travel, business, and exams</li>
-            <li>Interactive speaking practice</li>
-            <li>Focus on grammar, vocabulary, and pronunciation</li>
-            <li>Support for children and adults</li>
-        </ul>
-    </section>
-
-    <section id="tariffs" style="background-color: #f9f9f9; padding: 20px; margin: 20px 0; text-align: center; border: 1px solid #ddd;">
-        <h2 style="font-weight: bold;">Tariffs</h2>
-        <p style="font-size: 1.2em;">💰 <strong>150 Euros</strong> for 12 lessons of 90 minutes</p>
-        <p style="font-size: 1.2em;">💰 <strong>200 Euros</strong> for 15 pronunciation lessons of 90 minutes</p>
-    </section>
-
-    <section id="testimonials">
-         <h2 style="font-weight: bold;">Testimonials</h2>
-         <p><strong>Samia and Sarah (Saudi Arabia):</strong> "Meriem made learning French from scratch enjoyable and effective. We had so much fun and learned a lot!"</p>
-         <p><strong>Stay-at-home mother (Dubai):</strong> "Thanks to Meriem, I'm almost fluent in French. Her lessons are engaging and tailored to my needs."</p>
-         <p><strong>Aeronautics researcher (UAE):</strong> "Meriem helped me learn French for research purposes. Her clear explanations were invaluable."</p>
-         <p><strong>Spanish diplomat:</strong> "Meriem’s guidance helped me pass my French exams for diplomacy with confidence and success."</p>
-    </section>
-
-    <footer>
-        <p>© 2024 Learn French with Meriem. All rights reserved.</p>
-    </footer>
-
-</body>
-
-</html>
+            <li>French for travel, business, and
