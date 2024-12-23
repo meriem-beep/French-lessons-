@@ -122,5 +122,19 @@ footer::after {
     background-color: transparent; /* Makes the bottom part transparent */
     width: 100%;
 }
+/* Fixed position for the 6-Month Challenge Box */
+#challenge-box {
+    position: fixed;
+    top: 20%; /* Adjust this value based on where you want the box */
+    left: 10px; /* Keeps it 10px from the left side of the screen */
+    background-color: #ffcccc;
+    color: red;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 5px;
+    z-index: 1000; /* Ensures it stays above other content */
+    width: 250px; /* Set the width of the box */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
 
 </style>
