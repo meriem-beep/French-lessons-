@@ -44,6 +44,7 @@
             align-items: flex-start;
             margin: 20px;
             gap: 20px;
+            flex-wrap: wrap; /* Added to ensure wrapping on mobile */
         }
 
         form {
@@ -52,7 +53,7 @@
             border: 1px solid #ccc;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 40%;
+            width: 45%; /* Adjusted width for better responsiveness */
             box-sizing: border-box;
         }
 
@@ -115,13 +116,28 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            nav a {
+                display: block; /* Stack navigation links on small screens */
+                margin: 10px 0;
+                font-size: 1em; /* Adjusted font size for mobile */
+            }
+
             .form-container {
                 flex-direction: column;
                 align-items: center;
             }
 
             form {
-                width: 90%;
+                width: 90%; /* Full width on mobile */
+                margin-bottom: 20px; /* Added space between forms */
+            }
+
+            #hero img {
+                width: 80%; /* Adjusted image size for mobile */
+            }
+
+            #student-needs, #services, #tariffs, #testimonials {
+                padding: 10px; /* Added padding for mobile */
             }
         }
     </style>
