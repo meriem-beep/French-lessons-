@@ -28,8 +28,10 @@
     <label for="goals">Language Learning Goals</label>
     <textarea id="goals" name="goals" placeholder="What do you want to focus on? Pronunciation, grammar, speaking, etc."></textarea>
 
-    <label for="availability">Preferred Lesson Times</label>
-    <input type="text" id="availability" name="availability" placeholder="Your availability (e.g., evenings, weekends)">
+    <!-- Added a calendar section -->
+<label for="lesson_date">Choose a Date for Your Free Lesson (1 Hour)</label>
+<input type="datetime-local" id="lesson_date" name="lesson_date" required>
+
 
     <button type="submit">Submit</button>
   </form>
@@ -103,23 +105,7 @@
     <footer>
         <p>© 2024 Learn French with Meriem. All rights reserved.</p>
     </footer>
-    <!-- Booking Calendar Box -->
-<div style="position: fixed; top: 20%; right: 10px; background-color: #e6f7ff; color: #00509e; padding: 10px; border: 2px solid #00509e; border-radius: 5px; z-index: 1000; width: 250px;">
-    <h4 style="margin: 0; font-size: 1.1em;">📅 Free First Hour</h4>
-    <p style="margin: 5px 0; font-size: 0.9em;">Book your first free lesson</p>
-    <form action="https://formspree.io/f/xjkkbrlj" method="POST">
-        <label for="calendar" style="font-size: 0.9em;">Select Date:</label>
-        <input type="date" id="calendar" name="date" style="width: 100%; margin: 5px 0;" min="2025-01-01" required>
 
-        <label for="name" style="font-size: 0.9em;">Your Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Full Name" style="width: 100%; margin: 5px 0;" required>
-
-        <label for="email" style="font-size: 0.9em;">Your Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email Address" style="width: 100%; margin: 5px 0;" required>
-
-        <button type="submit" style="font-size: 0.9em; font-weight: bold; color: white; background-color: #00509e; padding: 5px 10px; border: none; border-radius: 3px; width: 100%;">Book Now</button>
-    </form>
-</div>
 
 </body>
 </html>
