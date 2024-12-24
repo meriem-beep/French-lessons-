@@ -17,7 +17,7 @@
 
         h1, h2 {
             text-align: center;
-            color: purple; /* Added purple color to titles */
+            color: purple;
         }
 
         /* Navigation Menu */
@@ -45,6 +45,7 @@
             gap: 20px;
             margin: 20px 0;
             text-align: center;
+            flex-wrap: wrap; /* Ensures it’s mobile-friendly */
         }
 
         .question-box {
@@ -84,6 +85,7 @@
 
         form h2 {
             margin-top: 0;
+            color: red; /* Red Title */
         }
 
         form label {
@@ -172,6 +174,25 @@
                 padding: 10px;
             }
         }
+
+        /* Appealing Sentences */
+        .appealing-sentences {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .appealing-sentence {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .appealing-sentence span {
+            color: purple;
+        }
     </style>
 </head>
 
@@ -191,13 +212,19 @@
         <h1>French Lessons with Meriem</h1>
     </header>
 
+    <!-- Appealing Sentences -->
+    <section class="appealing-sentences">
+        <div class="appealing-sentence">LEARN FRENCH WITH AFFORDABLE PRICES: <span>1.5 HOURS FOR JUST 15 EUROS PER SESSION</span></div>
+        <div class="appealing-sentence">LEARN FRENCH WITH A FUN TEACHER AND SEE QUICK PROGRESS</div>
+    </section>
+
     <!-- New Question Section -->
     <section id="questions">
-        <div class="question-box">You don't know where to start learning French?</div>
-        <div class="question-box">Are French classes expensive?</div>
-        <div class="question-box">Do you need someone to speak French with to practice?</div>
-        <div class="question-box">Do you have issues with grammar and word gender in French?</div>
-        <div class="question-box">Do you want to learn French from scratch?</div>
+        <div class="question-box">Not sure where to begin your French learning journey?</div>
+        <div class="question-box">Are you wondering if French lessons are too expensive?</div>
+        <div class="question-box">Looking for someone to practice French with?</div>
+        <div class="question-box">Struggling with French grammar and word gender?</div>
+        <div class="question-box">Want to start learning French from scratch?</div>
     </section>
 
     <!-- SIGNAL Link for the 6-Month Challenge -->
