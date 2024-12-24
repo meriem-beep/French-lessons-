@@ -136,6 +136,49 @@ footer::after {
     width: 100%;
     box-sizing: border-box;
 }
+#testimonials {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#testimonials h2 {
+    color: purple;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial blockquote {
+    font-size: 1.2em;
+    line-height: 1.5;
+    quotes: "“" "”" "‘" "’";
+}
+
+.testimonial blockquote::before {
+    content: open-quote;
+    font-size: 2em;
+    color: #ccc;
+    vertical-align: -0.4em;
+}
+
+.testimonial blockquote::after {
+    content: close-quote;
+    font-size: 2em;
+    color: #ccc;
+    vertical-align: -0.4em;
+}
+
+.testimonial p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
 
 /* Add padding to the body content to prevent overlap */
 body {
