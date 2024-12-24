@@ -85,24 +85,13 @@
             width: 100%;
         }
 
-        .language-switcher {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .language-switcher button {
-            padding: 10px 15px;
-            margin: 5px;
-            border: none;
-            border-radius: 5px;
-            background-color: #4b0082; /* Purple */
-            color: white;
-            cursor: pointer;
-        }
-
-        .language-switcher button:hover {
-            background-color: #ffd700; /* Gold */
-            color: #4b0082;
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -120,6 +109,9 @@
     <header>
         <h1>Meet Your Teacher: Meriem</h1>
     </header>
+
+    <!-- Teacher's Image -->
+    <img src="path/to/IMG_2556.jpg" alt="Teacher Image">
 
     <!-- Introduction Section -->
     <section id="intro">
@@ -144,31 +136,11 @@
         I also like to read, or only buy books and store them without reading them, I just love having them nearby.<br><br>
 
         Good luck!</p>
-   
+    </section>
 
     <!-- Footer -->
     <footer>
         <p>Contact me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
     </footer>
-
-    <!-- Language Switcher -->
-    <div class="language-switcher">
-        <button onclick="changeLanguage('en')">English</button>
-        <button onclick="changeLanguage('fr')">Français</button>
-        <button onclick="changeLanguage('ar')">العربية</button>
-    </div>
-
-    <!-- Language Switch Script -->
-    <script>
-        function changeLanguage(lang) {
-            if (lang === 'en') {
-                location.href = 'index-en.html';
-            } else if (lang === 'fr') {
-                location.href = 'index-fr.html';
-            } else if (lang === 'ar') {
-                location.href = 'index-ar.html';
-            }
-        }
-    </script>
 </body>
 </html>
