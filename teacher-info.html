@@ -85,14 +85,34 @@
             width: 100%;
         }
 
-        img {
+        .language-switcher {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .language-switcher button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4b0082; /* Purple */
+            color: white;
+            cursor: pointer;
+        }
+
+        .language-switcher button:hover {
+            background-color: #ffd700; /* Gold */
+            color: #4b0082;
+        }
+
+        /* Styling for the image at the top */
+        #teacher-image {
             display: block;
             margin: 20px auto;
             max-width: 100%;
             height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
     </style>
 </head>
 <body>
@@ -110,8 +130,8 @@
         <h1>Meet Your Teacher: Meriem</h1>
     </header>
 
-    <!-- Teacher's Image -->
-    <img src="path/to/IMG_2556.jpg" alt="Teacher Image">
+    <!-- Image Section (Image linked from the repository) -->
+    <img id="teacher-image" src="IMG_2556.jpg" alt="Teacher Image">
 
     <!-- Introduction Section -->
     <section id="intro">
