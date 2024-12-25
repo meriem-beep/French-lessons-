@@ -38,114 +38,13 @@
             color: #ddd;
         }
 
-        /* New Questions Section */
-        #questions {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
+        /* Appealing Sentence Styling */
+        .centered-sentence {
             text-align: center;
-            flex-wrap: wrap; /* Ensures it’s mobile-friendly */
-        }
-
-        .question-box {
-            border: 2px solid purple;
-            padding: 20px;
-            width: 200px;
-            background-color: #f9f9f9;
-            color: purple;
-            border-radius: 8px;
-            box-sizing: border-box;
-            font-weight: bold;
-        }
-
-        .question-box:hover {
-            background-color: #f1e6f1;
-        }
-
-        /* Forms and Other Styles */
-        .form-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin: 20px;
-            gap: 20px;
-            flex-wrap: nowrap;
-        }
-
-        form {
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 48%;
-            box-sizing: border-box;
-        }
-
-        form h2 {
-            margin-top: 0;
-            color: red; /* Red Title */
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        form input,
-        form textarea,
-        form button,
-        form input[type="date"] {
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 10px;
-            font-size: 14px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        form button {
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        form button:hover {
-            background-color: #555;
-        }
-
-        /* SIGNAL for the 6-Months Challenge Link */
-        #challenge-link {
-            font-weight: bold;
-            color: #ffcc00;
             font-size: 1.5em;
-            text-align: center;
-            padding: 10px;
-            background-color: #ffcc00;
-            color: white;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            cursor: pointer;
-        }
-
-        /* Centering Titles */
-        #services h2,
-        #student-needs h2 {
-            text-align: center;
-        }
-
-        /* Purple Bold Italic Text */
-        .form-text {
-            color: purple;
-            font-size: 1.3em;
             font-weight: bold;
-            font-style: italic;
-            text-align: center;
-            margin-bottom: 20px;
+            color: red;
+            margin: 20px 0;
         }
 
         /* Responsive Design */
@@ -174,25 +73,6 @@
                 padding: 10px;
             }
         }
-
-        /* Appealing Sentences */
-        .appealing-sentences {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .appealing-sentence {
-            font-size: 1.3em;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .appealing-sentence span {
-            color: purple;
-        }
     </style>
 </head>
 
@@ -212,11 +92,8 @@
         <h1>French Lessons with Meriem</h1>
     </header>
 
-    <!-- Appealing Sentences -->
-    <section class="appealing-sentences">
-        <div class="appealing-sentence">LEARN FRENCH WITH AFFORDABLE PRICES: <span>1.5 HOURS FOR JUST 15 EUROS PER SESSION</span></div>
-        <div class="appealing-sentence">LEARN FRENCH WITH A FUN TEACHER AND SEE QUICK PROGRESS</div>
-    </section>
+    <!-- Centered Appealing Sentence -->
+    <div class="centered-sentence">LEARN FRENCH WITH AFFORDABLE PRICES: 1.5 HOURS FOR JUST 15 EUROS PER SESSION</div>
 
     <!-- New Question Section -->
     <section id="questions">
@@ -226,6 +103,9 @@
         <div class="question-box">Struggling with French grammar and word gender?</div>
         <div class="question-box">Want to start learning French from scratch?</div>
     </section>
+</body>
+
+</html>
 
     <!-- SIGNAL Link for the 6-Month Challenge -->
     <div id="challenge-link" onclick="window.location.href='6%20MONTHS%20CHALLENGE%20DETAILS.html'">
