@@ -224,40 +224,76 @@
         🚨 Click Here to Learn About the 6-Month Challenge 🚨
     </div>
 
-    <section class="form-container">
-        <!-- Contact Form -->
-        <form action="https://formspree.io/f/xjkkbrlj" method="POST">
-            <div class="form-text">FILL THIS FORM TO SCHEDULE LESSONS AT YOUR PACE</div>
-            <h2>Contact Me</h2>
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-            <label for="goals">Language Learning Goals</label>
-            <textarea id="goals" name="goals" placeholder="What do you want to focus on?"></textarea>
-            <label for="first-lesson-date">Choose your FREE First Lesson</label>
-            <input type="date" id="first-lesson-date" name="first-lesson-date" required>
-            <button type="submit">Submit</button>
-        </form>
+  <style>
+    /* CSS for the form description box */
+    .form-text {
+        background-color: purple;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    
+    /* CSS for form container */
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    /* Optional: Styling for buttons */
+    button {
+        background-color: purple;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #6a0dad;
+    }
+</style>
 
-        <!-- 6-Months Challenge Form -->
-        <form id="challenge-form" action="https://formspree.io/f/xjkkbrlj" method="POST">
-            <div class="form-text">FILL OUT THIS FORM IF YOU'RE READY TO JOIN THE LEARN FRENCH CHALLENGE: FROM BEGINNER TO MASTER!</div>
-            <h2>🚨 6-Months Challenge</h2>
-            <div id="challenge-details">
-                <p>💼 <b>90 min, 3 times a week</b></p>
-                <p>💰 <b>200 Euros/month</b></p>
-                <p>🎯 <b>Reach B2 in French!</b></p>
-            </div>
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-            <label for="availability">Preferred Lesson Times</label>
-            <textarea id="availability" name="availability" placeholder="Your availability"></textarea>
-            <button type="submit">Join Now</button>
-        </form>
-    </section>
+<section class="form-container">
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/xjkkbrlj" method="POST">
+        <div class="form-text">FILL THIS FORM TO SCHEDULE LESSONS AT YOUR PACE</div>
+        <h2>Contact Me</h2>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+        <label for="goals">Language Learning Goals</label>
+        <textarea id="goals" name="goals" placeholder="What do you want to focus on?"></textarea>
+        <label for="first-lesson-date">Choose your FREE First Lesson</label>
+        <input type="date" id="first-lesson-date" name="first-lesson-date" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- 6-Months Challenge Form -->
+    <form id="challenge-form" action="https://formspree.io/f/xjkkbrlj" method="POST">
+        <div class="form-text">FILL OUT THIS FORM IF YOU'RE READY TO JOIN THE LEARN FRENCH CHALLENGE: FROM BEGINNER TO MASTER!</div>
+        <h2>🚨 6-Months Challenge</h2>
+        <div id="challenge-details">
+            <p>💼 <b>90 min, 3 times a week</b></p>
+            <p>💰 <b>200 Euros/month</b></p>
+            <p>🎯 <b>Reach B2 in French!</b></p>
+        </div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+        <label for="availability">Preferred Lesson Times</label>
+        <textarea id="availability" name="availability" placeholder="Your availability"></textarea>
+        <button type="submit">Join Now</button>
+    </form>
+</section>
 
     <section id="hero">
         <img src="IMG_2556.jpg" alt="Learn French" style="width: 50%; display: block; margin: 0 auto;">
