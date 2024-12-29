@@ -207,7 +207,7 @@
         <div class="centered-red">LEARN FRENCH WITH AFFORDABLE PRICES: 1.5 HOURS FOR JUST 19 EUROS PER SESSION</div>
     </section>
 
-   <style>
+  <style>
     /* Centering the form container */
     .form-container {
         display: flex;
@@ -256,13 +256,23 @@
 
     /* Styling for section alignment */
     #questions {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         margin-top: 40px;
+        gap: 20px;
     }
 
     .question-box {
-        margin: 10px 0;
         font-size: 18px;
+        background-color: #f0f0f0;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        flex: 1 1 calc(30% - 20px); /* Adjusts the width of each box */
+        min-width: 200px;
+        max-width: 300px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     #challenge-link {
@@ -305,11 +315,11 @@
     🚨 Click Here to Learn About the 6-Month Challenge 🚨
 </div>
 
+<!-- SIGNAL Link for the 6-Month Challenge -->
+<div id="challenge-link" onclick="window.location.href='6%20MONTHS%20CHALLENGE%20DETAILS.html'">
+    🚨 Click Here to Learn About the 6-Month Challenge 🚨
+</div>
 
-    <!-- SIGNAL Link for the 6-Month Challenge -->
-    <div id="challenge-link" onclick="window.location.href='6%20MONTHS%20CHALLENGE%20DETAILS.html'">
-        🚨 Click Here to Learn About the 6-Month Challenge 🚨
-    </div>
 
     <section id="hero">
         <img src="IMG_2556.jpg" alt="Learn French" style="width: 50%; display: block; margin: 0 auto;">
