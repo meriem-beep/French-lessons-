@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <button onclick="window.location.href='index.html';" style="padding: 10px 15px; background-color: #4b0082; color: white; border: none; border-radius: 5px; cursor: pointer;">
-    Go to Home Page
-</button>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>6-Month Intensive French Learning Challenge - Starts February 2025</title>
@@ -36,6 +32,25 @@
             font-size: 1.2em;
             list-style-type: disc;
             margin-left: 40px;
+        }
+
+        nav {
+            background-color: purple;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: yellow;
         }
 
         .challenge-section {
@@ -71,6 +86,11 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
             .challenge-section {
                 padding: 10px;
             }
@@ -97,6 +117,7 @@
         <h1>6-Month Intensive French Learning Challenge</h1>
         <p style="font-size: 1.5em; color: white; text-align: center;">Join our immersive, results-driven challenge to master French in just 6 months, starting February 2025!</p>
     </header>
+
 <!-- 6-Months Challenge Form -->
 <form id="challenge-form" action="https://formspree.io/f/xjkkbrlj" method="POST" style="max-width: 600px; margin: 20px auto; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
     <h2 style="text-align: center; color: purple;">🚨 6-Months Challenge</h2>
