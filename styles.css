@@ -122,6 +122,17 @@ footer::after {
     background-color: transparent; /* Makes the bottom part transparent */
     width: 100%;
 }
+/* Ensure the #questions section itself is centered */
+#questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px auto; /* Center the section horizontally */
+    text-align: center; /* Center-align text inside boxes */
+}
+
 /* Fixed position for the 6-Month Challenge Box */
 #challenge-box {
     position: fixed;
