@@ -254,28 +254,25 @@
         margin-bottom: 20px;
     }
 
-    /* Styling for section alignment */
-    #questions {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        margin-top: 40px;
-        flex-wrap: nowrap;
-    }
+   #questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Allow wrapping */
+}
 
-    .question-box {
-        font-size: 18px;
-        background-color: #f0f0f0;
-        padding: 15px;
-        border-radius: 10px;
-        text-align: center;
-        flex: 0 1 auto;
-        min-width: 200px;
-        max-width: 300px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
+.question-box {
+    font-size: 18px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and basis for responsiveness */
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
     #challenge-link {
         text-align: center;
         margin-top: 20px;
