@@ -207,31 +207,104 @@
         <div class="centered-red">LEARN FRENCH WITH AFFORDABLE PRICES: 1.5 HOURS FOR JUST 19 EUROS PER SESSION</div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section class="form-container">
-        <form action="https://formspree.io/f/xjkkbrlj" method="POST">
-            <div class="form-text">FILL THIS FORM TO SCHEDULE LESSONS AT YOUR PACE</div>
-            <h2>Contact Me</h2>
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-            <label for="goals">Language Learning Goals</label>
-            <textarea id="goals" name="goals" placeholder="What do you want to focus on?"></textarea>
-            <label for="first-lesson-date">Choose your FREE First Lesson</label>
-            <input type="date" id="first-lesson-date" name="first-lesson-date" required>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+   <style>
+    /* Centering the form container */
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 50%;
+        background-color: #f9f9f9;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-    <!-- New Question Section -->
-    <section id="questions">
-        <div class="question-box">Not sure where to begin your French learning journey?</div>
-        <div class="question-box">Are you wondering if French lessons are too expensive?</div>
-        <div class="question-box">Looking for someone to practice French with?</div>
-        <div class="question-box">Struggling with French grammar and word gender?</div>
-        <div class="question-box">Want to start learning French from scratch?</div>
-    </section>
+    /* Adjusting the form size */
+    form {
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /* Styling for form description box */
+    .form-text {
+        background-color: purple;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Styling for section alignment */
+    #questions {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .question-box {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    #challenge-link {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
+
+<!-- Contact Form Section -->
+<section class="form-container">
+    <form action="https://formspree.io/f/xjkkbrlj" method="POST">
+        <div class="form-text">FILL THIS FORM TO SCHEDULE LESSONS AT YOUR PACE</div>
+        <h2>Contact Me</h2>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+        <label for="goals">Language Learning Goals</label>
+        <textarea id="goals" name="goals" placeholder="What do you want to focus on?"></textarea>
+        <label for="first-lesson-date">Choose your FREE First Lesson</label>
+        <input type="date" id="first-lesson-date" name="first-lesson-date" required>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- New Question Section -->
+<section id="questions">
+    <div class="question-box">Not sure where to begin your French learning journey?</div>
+    <div class="question-box">Are you wondering if French lessons are too expensive?</div>
+    <div class="question-box">Looking for someone to practice French with?</div>
+    <div class="question-box">Struggling with French grammar and word gender?</div>
+    <div class="question-box">Want to start learning French from scratch?</div>
+</section>
+
+<!-- SIGNAL Link for the 6-Month Challenge -->
+<div id="challenge-link" onclick="window.location.href='6%20MONTHS%20CHALLENGE%20DETAILS.html'">
+    🚨 Click Here to Learn About the 6-Month Challenge 🚨
+</div>
+
 
     <!-- SIGNAL Link for the 6-Month Challenge -->
     <div id="challenge-link" onclick="window.location.href='6%20MONTHS%20CHALLENGE%20DETAILS.html'">
