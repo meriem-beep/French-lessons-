@@ -258,9 +258,10 @@
     #questions {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 40px;
+        align-items: center;
         gap: 20px;
+        margin-top: 40px;
+        flex-wrap: nowrap;
     }
 
     .question-box {
@@ -269,7 +270,7 @@
         padding: 15px;
         border-radius: 10px;
         text-align: center;
-        flex: 1 1 calc(30% - 20px); /* Adjusts the width of each box */
+        flex: 0 1 auto;
         min-width: 200px;
         max-width: 300px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -309,6 +310,7 @@
     <div class="question-box">Struggling with French grammar and word gender?</div>
     <div class="question-box">Want to start learning French from scratch?</div>
 </section>
+
 
 <!-- SIGNAL Link for the 6-Month Challenge -->
 <div id="challenge-link" onclick="window.location.href='6%20MONTHS%20CHALLENGE%20DETAILS.html'">
