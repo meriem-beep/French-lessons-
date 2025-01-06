@@ -19,7 +19,7 @@
             margin: 0;
             text-align: center;
             background-color: #4b0082; /* Purple */
-            font-size: 1.2em; /* Larger navigation text */
+            font-size: 1.2em;
         }
 
         nav ul li {
@@ -38,20 +38,35 @@
             color: white;
         }
 
-     <header>
-    <h1>Meet Your Teacher: Meriem</h1>
-    <div class="teacher-details">
-        French Educated | 11 Years Teaching Experience | Professionals & Students<br>
-        Flexible, Patient, and FUN!
-    </div>
-</header>
+        header {
+            background-color: #ffd700; /* Golden yellow */
+            color: #4b0082; /* Purple */
+            text-align: center;
+            padding: 20px 15px;
+            border-bottom: 3px solid #4b0082;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        header .teacher-details {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            line-height: 1.5;
+        }
 
         #intro {
             background-color: #d3b2e5; /* Lighter purple */
             color: white;
             padding: 40px;
             text-align: center;
-            font-size: 1.2em; /* Larger introduction text */
+            font-size: 1.2em;
         }
 
         #teacher-description {
@@ -98,14 +113,12 @@
             color: #4b0082;
         }
 
-        /* Styling for the image at the top */
         #teacher-image {
             display: block;
             margin: 20px auto;
             max-width: 100%;
             height: auto;
         }
-
     </style>
 </head>
 <body>
@@ -118,30 +131,14 @@
         </ul>
     </nav>
 
-    header {
-    background-color: #ffd700; /* Unified golden yellow background */
-    color: #4b0082; /* Purple text color for contrast */
-    text-align: center;
-    padding: 20px 15px;
-    border-bottom: 3px solid #4b0082; /* Subtle border for definition */
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em; /* Prominent size for the main title */
-    font-weight: bold; /* Bold for emphasis */
-    text-transform: uppercase; /* All caps for stronger impact */
-}
-
-header .teacher-details {
-    margin-top: 10px; /* Space below the title */
-    font-size: 1.2em; /* Distinct but smaller size for details */
-    font-weight: 500; /* Medium weight for readability */
-    letter-spacing: 0.5px; /* Slight letter spacing for elegance */
-    line-height: 1.5; /* Improve readability with consistent spacing */
-    color: #4b0082; /* Same purple as the title for uniformity */
-}
-
+    <!-- Header -->
+    <header>
+        <h1>Meet Your Teacher: Meriem</h1>
+        <div class="teacher-details">
+            French Educated | 11 Years Teaching Experience | Professionals & Students<br>
+            Flexible, Patient, and FUN!
+        </div>
+    </header>
 
     <!-- Image Section -->
     <img id="teacher-image" src="IMG_2556.jpg" alt="Teacher Image">
@@ -169,7 +166,7 @@ header .teacher-details {
 
     <!-- Footer -->
     <footer>
-        <p>Contact me at: <a href="mailto:your-frenchforeveryone74@gmail.com">frenchforeveryone74@gmail.com</a></p>
+        <p>Contact me at: <a href="mailto:frenchforeveryone74@gmail.com">frenchforeveryone74@gmail.com</a></p>
     </footer>
 </body>
 </html>
