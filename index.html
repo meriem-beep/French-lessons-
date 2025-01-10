@@ -22,18 +22,8 @@
     <!-- End Google Tag Manager -->
 
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-</head>
 
-<body>
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5TFPFWX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-
-    <!-- Page Content -->
-</body>
-
-</html>
-
+    <style>
         /* General Styles */
         body {
             font-family: Arial, sans-serif;
@@ -51,14 +41,16 @@
         /* Navigation Menu */
         nav {
             background-color: #333;
-            padding: 10px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 20px;
+            margin: 0 10px;
             font-size: 1.2em;
         }
 
@@ -68,153 +60,53 @@
 
         /* Styling for the logo */
         .logo {
-            display: block;
             width: 100px; /* Adjust size */
             height: auto;
-            margin-top: 10px; /* Space from the top */
-            margin-left: 10px; /* Space from the left */
-        }
-
-        /* Forms and Other Styles */
-        .form-container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            margin: 20px auto;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        form {
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 60%;
-            max-width: 800px;
-            box-sizing: border-box;
-        }
-
-        form h2 {
-            margin-top: 0;
-            color: red; /* Red Title */
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        form input,
-        form textarea,
-        form button,
-        form input[type="date"] {
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 10px;
-            font-size: 14px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        form button {
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        form button:hover {
-            background-color: #555;
-        }
-
-        /* SIGNAL for the 6-Months Challenge Link */
-        #challenge-link {
-            font-weight: bold;
-            color: #ffcc00;
-            font-size: 1.5em;
-            text-align: center;
-            padding: 10px;
-            background-color: #ffcc00;
-            color: white;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            cursor: pointer;
-        }
-
-        /* Centering Titles */
-        #services h2,
-        #student-needs h2 {
-            text-align: center;
-        }
-
-        /* Purple Bold Italic Text */
-        .form-text {
-            color: purple;
-            font-size: 1.3em;
-            font-weight: bold;
-            font-style: italic;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        /* Appealing Sentence in Red */
-        .centered-red {
-            color: red;
-            text-align: center;
-            font-size: 1.3em;
-            font-weight: bold;
-            margin: 20px 0;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .logo {
+                margin-bottom: 10px;
+            }
+
             nav a {
                 display: block;
                 margin: 10px 0;
                 font-size: 1em;
-            }
-
-            .form-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            form {
-                width: 90%;
-                margin-bottom: 20px;
-            }
-
-            #hero img {
-                width: 80%;
-            }
-
-            #student-needs, #services, #tariffs, #testimonials {
-                padding: 10px;
             }
         }
     </style>
 </head>
 
 <body>
-    <!-- Logo without a link -->
-    <img src="LOGOO.png" alt="Logo" class="logo">
+    <!-- Google Tag Manager (NoScript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5TFPFWX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (NoScript) -->
 
     <!-- Navigation Menu -->
     <nav>
-        <a href="#hero">Home</a>
-        <a href="teacher-info.html">Teacher Info</a>
-        <a href="faq.html">FAQ</a>
-        <a href="Tariffs.html">Tariffs</a>
-        <a href="#student-needs">Understanding Your Challenges</a>
-        <a href="#services">Services</a>
-        <a href="#testimonials">Testimonials</a>
-    </nav>
+        <img src="LOGOO.png" alt="Logo" class="logo">
+        <div>
+            <a href="#hero">Home</a>
+            <a href="teacher-info.html">Teacher Info</a>
+            <a href="faq.html">FAQ</a>
+            <a href="Tariffs.html">Tariffs</a>
+            <a href="#student-needs">Understanding Your Challenges</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+        </div>
+        
+    </nav>    
     
-         <!-- Image Placeholder for Hero Section -->
+    <!-- Image Placeholder for Hero Section -->
         <div style="text-align:center;">
             <img src="ME3" alt="French Business Meeting" style="width:100%; max-width:600px; margin-bottom: 20px;">
         </div>
