@@ -1,230 +1,269 @@
-<style>
-    /* Basic styling to make the navigation visible */
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    #contact {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <style>
+        /* Basic styling to make the navigation visible */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-#contact h2 {
-  text-align: center;
-  color: #333;
-}
+        #contact {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+        #contact h2 {
+            text-align: center;
+            color: #333;
+        }
 
-form label {
-  margin-bottom: 5px;
-  color: #555;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+        }
 
-form input, form textarea, form button {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-}
+        form label {
+            margin-bottom: 5px;
+            color: #555;
+        }
 
-form button {
-  background: #007BFF;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
+        form input, form textarea, form button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
 
-form button:hover {
-  background: #0056b3;
-}
+        form button {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
 
+        form button:hover {
+            background: #0056b3;
+        }
 
-    nav ul li {
-        display: inline;
-        margin-right: 15px;
-    }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
 
-    nav ul li a {
-        text-decoration: none;
-        color: blue;
-    }
+        nav ul li a {
+            text-decoration: none;
+            color: blue;
+        }
 
-    nav ul li a:hover {
-        text-decoration: underline;
-    }
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f9f5ff; /* Light yellow */
-        color: #4b0082; /* Purple */
-    }
-    header {
-        background-color: #ffd700; /* Golden yellow */
-        color: #4b0082;
-        text-align: center;
-        padding: 20px;
-    }
-    section {
-        padding: 20px;
-        text-align: center;
-    }
-    h1 {
-        margin: 10px 0;
-    }
-    p {
-        line-height: 1.6;
-    }
-    .price-caption {
-        background-color: #4b0082;
-        color: #fff;
-        padding: 10px;
-        margin: 20px 0;
-        font-weight: bold;
-        border-radius: 5px;
-    }
-    .packs {
-        background-color: #fff8dc; /* Light cream yellow */
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        margin: 20px auto;
-        width: 80%;
-        max-width: 600px;
-    }
-    .packs h2 {
-        color: #4b0082;
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5ff; /* Light yellow */
+            color: #4b0082; /* Purple */
+        }
+
+        header {
+            background-color: #ffd700; /* Golden yellow */
+            color: #4b0082;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 10px 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .price-caption {
+            background-color: #4b0082;
+            color: #fff;
+            padding: 10px;
+            margin: 20px 0;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .packs {
+            background-color: #fff8dc; /* Light cream yellow */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .packs h2 {
+            color: #4b0082;
+        }
+
+        /* Challenge Container Styling */
         .challenge-container {
-    text-align: center;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
+            text-align: center;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-.challenge-text {
-    font-size: 1.2em;
-    color: #333;
-    display: block;
-    margin-bottom: 10px;
-}
+        .challenge-text {
+            font-size: 1.2em;
+            color: #333;
+            display: block;
+            margin-bottom: 10px;
+        }
 
-.challenge-link {
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #007BFF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
+        .challenge-link {
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
 
-.challenge-link:hover {
-    background-color: #0056b3;
-}
+        .challenge-link:hover {
+            background-color: #0056b3;
+        }
 
-    }
-    footer {
-    text-align: center;
-    background-color: #ffd700; /* Golden yellow */
-    color: #4b0082;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    width: 100%;
-    height: auto; /* Adjust height to content */
-}
+        footer {
+            text-align: center;
+            background-color: #ffd700; /* Golden yellow */
+            color: #4b0082;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            width: 100%;
+            height: auto; /* Adjust height to content */
+        }
 
-footer::after {
-    content: '';
-    display: block;
-    height: 10px; /* Height of the bottom strip */
-    background-color: transparent; /* Makes the bottom part transparent */
-    width: 100%;
-}
-/* Ensure the #questions section itself is centered */
-#questions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 40px auto; /* Center the section horizontally */
-    text-align: center; /* Center-align text inside boxes */
-}
+        footer::after {
+            content: '';
+            display: block;
+            height: 10px; /* Height of the bottom strip */
+            background-color: transparent; /* Makes the bottom part transparent */
+            width: 100%;
+        }
 
-/* Fixed position for the 6-Month Challenge Box */
-#challenge-box {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #ffcccc;
-    color: red;
-    padding: 20px;
-    border: 2px solid red;
-    border-radius: 5px;
-    z-index: 1000;
-    width: 100%;
-    box-sizing: border-box;
-}
-#testimonials {
-    padding: 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
+        /* Ensure the #questions section itself is centered */
+        #questions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px auto; /* Center the section horizontally */
+            text-align: center; /* Center-align text inside boxes */
+        }
 
-#testimonials h2 {
-    color: purple;
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
+        /* Fixed position for the 6-Month Challenge Box */
+        #challenge-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #ffcccc;
+            color: red;
+            padding: 20px;
+            border: 2px solid red;
+            border-radius: 5px;
+            z-index: 1000;
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-.testimonial {
-    margin-bottom: 20px;
-    font-style: italic;
-    color: #555;
-}
+        #testimonials {
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
 
-.testimonial blockquote {
-    font-size: 1.2em;
-    line-height: 1.5;
-    quotes: "“" "”" "‘" "’";
-}
+        #testimonials h2 {
+            color: purple;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
 
-.testimonial blockquote::before {
-    content: open-quote;
-    font-size: 2em;
-    color: #ccc;
-    vertical-align: -0.4em;
-}
+        .testimonial {
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #555;
+        }
 
-.testimonial blockquote::after {
-    content: close-quote;
-    font-size: 2em;
-    color: #ccc;
-    vertical-align: -0.4em;
-}
+        .testimonial blockquote {
+            font-size: 1.2em;
+            line-height: 1.5;
+            quotes: "“" "”" "‘" "’";
+        }
 
-.testimonial p {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #333;
-}
+        .testimonial blockquote::before {
+            content: open-quote;
+            font-size: 2em;
+            color: #ccc;
+            vertical-align: -0.4em;
+        }
 
-/* Add padding to the body content to prevent overlap */
-body {
-    margin-top: 100px;
-}
+        .testimonial blockquote::after {
+            content: close-quote;
+            font-size: 2em;
+            color: #ccc;
+            vertical-align: -0.4em;
+        }
+
+        .testimonial p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Add padding to the body content to prevent overlap */
+        body {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Challenge</h1>
+    </header>
+
+    <section>
+        <div class="challenge-container">
+            <span class="challenge-text">🚨 Click Here to Learn About the 6-Month Challenge Beginner's Edition 🚨</span>
+            <a href="6 MONTHS CHALLENGE DETAILS.html" class="challenge-link">Learn More</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+
+</body>
+</html>
