@@ -31,9 +31,11 @@
             padding: 0;
             background-color: #f9f9f9;
             color: #333;
+            line-height: 1.6;
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             text-align: center;
             color: purple;
         }
@@ -45,6 +47,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 10px 20px;
+            flex-wrap: wrap;
         }
 
         nav a {
@@ -58,33 +61,43 @@
             color: #ddd;
         }
 
-        /* Styling for the logo */
         .logo {
-            width: 100px; /* Adjust size */
+            width: 100px;
             height: auto;
+            margin-bottom: 10px;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            nav {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
+        /* Hero Section */
+        section#hero {
+            padding: 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+        }
 
-            .logo {
-                margin-bottom: 10px;
-            }
+        section#hero h1 {
+            font-size: 2.5em;
+        }
 
-            nav a {
-                display: block;
-                margin: 15px 0;
-                font-size: 1em;
-            }
+        section#hero h2 {
+            font-size: 1.6em;
+        }
+
+        /* Mobile-Friendly Container for Yellow Section */
+        .yellow-container {
+            background-color: yellow;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 1.5em;
         }
 
         /* Form Styling */
         .form-container {
-            max-width: 800px;
+            max-width: 500px;
             margin: 20px auto;
             padding: 20px;
             background-color: white;
@@ -93,13 +106,62 @@
         }
 
         .form-container input,
-        .form-container select {
+        .form-container select,
+        .form-container button {
             width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
             border-radius: 5px;
+            border: 1px solid #ccc;
             font-size: 1em;
+        }
+
+        .form-container button {
+            background-color: purple;
+            color: white;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #3b1d5f;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .form-container {
+                max-width: 100%;
+                padding: 15px;
+            }
+
+            .yellow-container {
+                width: 90%;
+            }
+
+            section#hero h1 {
+                font-size: 2em;
+            }
+
+            section#hero h2 {
+                font-size: 1.2em;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
         }
     </style>
 </head>
@@ -123,17 +185,17 @@
             <a href="#services">Services</a>
             <a href="#testimonials">Testimonials</a>
         </div>
-    </nav>    
-    
-    <!-- Image Placeholder for Hero Section -->
-    <div style="text-align:center;">
-        <img src="ME3.jpg" alt="French Business Meeting" style="width:100%; max-width:600px; height: auto; margin-bottom: 20px;">
-    </div>
+    </nav>
 
     <!-- Hero Section -->
     <section id="hero">
         <h1>Master Business French – Boost Your Career with Confidence!</h1>
         <h2>Affordable, flexible lessons tailored to professionals</h2>
+    </section>
+
+    <!-- Yellow 6-Month Section -->
+    <section class="yellow-container">
+        6-Month Package – Get Started Today!
     </section>
 
     <!-- Updated Sentences -->
@@ -178,9 +240,10 @@
                 <option value="Dubai">Dubai</option>
             </select>
 
-            <button type="submit" style="background-color: purple; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1em;">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </section>
+
 </body>
 
 </html>
