@@ -83,7 +83,7 @@
             font-size: 1.6em;
         }
 
-        /* Mobile-Friendly Container for Yellow Section */
+        /* Yellow 6-Month Challenge Container */
         .yellow-container {
             background-color: yellow;
             padding: 20px;
@@ -126,7 +126,13 @@
             background-color: #3b1d5f;
         }
 
-        /* Responsive Design */
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        /* Mobile-Friendly Form */
         @media (max-width: 768px) {
             nav {
                 flex-direction: column;
@@ -163,6 +169,26 @@
             background-color: #333;
             color: white;
         }
+
+        /* Icon Button */
+        .icon-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ffcc00;
+            color: #333;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5em;
+            text-align: center;
+            cursor: pointer;
+            width: 80px;
+            height: 80px;
+        }
+
+        .icon-btn:hover {
+            background-color: #ff9900;
+        }
     </style>
 </head>
 
@@ -193,19 +219,9 @@
         <h2>Affordable, flexible lessons tailored to professionals</h2>
     </section>
 
-    <!-- Yellow 6-Month Section -->
+    <!-- Yellow 6-Month Challenge Section -->
     <section class="yellow-container">
         6-Month Package – Get Started Today!
-    </section>
-
-    <!-- Updated Sentences -->
-    <section>
-        <div class="centered-red" style="color: red; font-size: 2em; font-weight: bold; text-align: center;">
-            BUSINESS FRENCH / FRENCH FOR EXAMS / ADVANCED FRENCH
-        </div>
-        <div class="centered-blue" style="color: blue; font-size: 2em; font-weight: bold; text-align: center;">
-            90min = 19 EUROS
-        </div>
     </section>
 
     <!-- Contact Form Section -->
@@ -214,13 +230,13 @@
             <h2 style="text-align: center; color: purple; font-size: 1.8em;">📚 Schedule Your Lessons</h2>
             <p style="text-align: center; font-size: 1.2em; color: #333;">FILL THIS FORM TO SCHEDULE LESSONS AT YOUR PACE</p>
 
-            <label for="name" style="display: block; margin-bottom: 12px; font-weight: bold;">Full Name</label>
+            <label for="name">Full Name</label>
             <input type="text" id="name" name="name" placeholder="Your Full Name" required>
 
-            <label for="email" style="display: block; margin-bottom: 12px; font-weight: bold;">Email</label>
+            <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Your Email Address" required>
 
-            <label for="country" style="display: block; margin-bottom: 12px; font-weight: bold;">Country</label>
+            <label for="country">Country</label>
             <select id="country" name="country" required>
                 <option value="" disabled selected>Select Your Country</option>
                 <option value="Austria">Austria</option>
@@ -240,9 +256,20 @@
                 <option value="Dubai">Dubai</option>
             </select>
 
+            <label for="goal">Your Learning Goal</label>
+            <input type="text" id="goal" name="goal" placeholder="e.g., Improve Business French" required>
+
+            <label for="first-lesson">First Free Lesson Scheduling</label>
+            <input type="date" id="first-lesson" name="first-lesson" required>
+
             <button type="submit">Submit</button>
         </form>
     </section>
+
+    <!-- Redirect Icon Button for 6 Months Challenge Details -->
+    <a href="6-Months-Challenge-Details.html">
+        <button class="icon-btn">🔗</button>
+    </a>
 
 </body>
 
